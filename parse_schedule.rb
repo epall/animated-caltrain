@@ -12,7 +12,7 @@ northbound = doc/'//table[@summary="Weekday Northbound service"]'
 train_numbers = northbound/'tbody/tr[1]/th/text()'
 train_numbers = train_numbers.map(&:to_s).find_all{|n| n =~ /\d\d\d/}
 
-stations = (northbound/"tbody/tr/th[2]/a").map(&:text)
+stations = (northbound/"tbody/tr/th[2]/a").map(&:text).map{|t| t.gsub(/\302\240/,' ')}
 
 trains = {}
 
@@ -42,7 +42,7 @@ southbound = doc/'//table[@summary="Weekday Southbound service"]'
 train_numbers = southbound/'tbody/tr[1]/th/text()'
 train_numbers = train_numbers.map(&:to_s).find_all{|n| n =~ /\d\d\d/}
 
-stations = (southbound/"tbody/tr/th[2]/a").map(&:text)
+stations = (southbound/"tbody/tr/th[2]/a").map(&:text).map{|t| t.gsub(/\302\240/,' ')}
 
 3.upto(train_numbers.length+2) do |column|
   cell_index = column
@@ -67,3 +67,4 @@ end
 
 f = File.open("trains.json", "wb")
 f.write(JSON.pretty_generate(trains))
+f.close()

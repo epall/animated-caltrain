@@ -1,39 +1,6 @@
-stations = {
-  "San Francisco": [440, 72],
-  "22nd Street": [400, 103],
-  "Bayshore": [336, 157],
-  "So. San Francisco": [269, 233],
-  "San Bruno": [194, 269],
-  "Millbrae": [185, 320],
-  "Broadway": [193, 360],
-  "Burlingame": [205, 389],
-  "San Mateo": [213, 427],
-  "Hayward Park": [209, 464],
-  "Hillsdale": [202, 494],
-  "Belmont": [202, 540],
-  "San Carlos": [202, 574],
-  "Redwood City": [203, 639],
-  "Menlo Park": [219, 731],
-  "Palo Alto": [222, 766],
-  "California Ave": [229, 810],
-  "San Antonio": [234, 883],
-  "Mountain View": [254, 926],
-  "Sunnyvale": [284, 997],
-  "Lawrence": [313, 1040],
-  "Santa Clara": [356, 1127],
-  "San Jose": [366, 1195],
-  "Tamien": [362, 1241],
-  "Capitol": [374, 1300],
-  "Blossom Hill": [377, 1386],
-  "Morgan Hill": [377, 1432],
-  "San Martin": [375, 1467],
-  "Gilroy": [374, 1497]
-}
-
 COLOR_LIMITED = "#F7E89D";
 COLOR_BULLET = "#F0B2A1";
 
-/*
 $(function(){
   $('#system_map').click(function(evt){
     topOffset = $(this).offset().top;
@@ -42,7 +9,19 @@ $(function(){
     console.log("["+(evt.pageX-leftOffset)+", "+(evt.pageY-topOffset)+"],");
   });
 });
-*/
+
+function now(){
+  var myDate = new Date();
+  return myDate;
+}
+
+function timepointToTime(timepoint){
+  var time = new Date();
+  time.setHours(timepoint.split(":")[0]);
+  time.setMinutes(timepoint.split(":")[1]);
+  time.setSeconds(0);
+  return time;
+}
 
 var img = new Image();
 img.onload = function(){
@@ -89,15 +68,18 @@ function interpolateTrainPosition(start, end){
   endTime.setHours(end[1].split(":")[0]);
   endTime.setMinutes(end[1].split(":")[1]);
   endTime.setSeconds(0);
-  var now = new Date();
   var segmentDuration = endTime-startTime;
-  var segmentCompleted = now-startTime;
+  var segmentCompleted = now()-startTime;
 
+  try{
   var x = stations[start[0]][0];
   var y = stations[start[0]][1];
   
   var xdist = stations[end[0]][0]-x;
   var ydist = stations[end[0]][1]-y;
+} catch(e){
+  console.log(e);
+}
 
   position = segmentCompleted/segmentDuration;
   return [x+(xdist*position), y+(ydist*position)];
@@ -106,9 +88,8 @@ function interpolateTrainPosition(start, end){
 /* Given a train, figure out where on the line it should be right now */
 function placeTrain(train){
   var thisTrain = schedule[train];
-  var now = (new Date()).toTimeString().slice(0, 5);
   for(var idx = 0; idx < thisTrain.length; idx++){
-    if(now < thisTrain[idx][1]){
+    if(now() < timepointToTime(thisTrain[idx][1])){
       /* it's between thisTrain[idx-1] and thisTrain[idx] */
       return interpolateTrainPosition(thisTrain[idx-1], thisTrain[idx]);
     }
@@ -118,13 +99,11 @@ function placeTrain(train){
 function updateTrains(){
   var map = document.getElementById('system_map').getContext('2d');
   map.drawImage(img, 0, 0, 600, 1600);
-  var d = new Date();
-  var now = d.toTimeString().slice(0, 5);
   var activeTrains = [];
   /* Determine the set of trains currently on the line */
   for(train in schedule){
     stops = schedule[train];
-    if(stops[0][1] < now && stops[stops.length-1][1] > now){
+    if(timepointToTime(stops[0][1]) < now() && timepointToTime(stops[stops.length-1][1]) > now()){
       /*console.log(train+" is active");*/
       activeTrains.push(train);
     }
@@ -136,9 +115,13 @@ function updateTrains(){
   }
 }
 
+$.getJSON("stations.json", function(data){
+  stations = data;
+});
+
 $.getJSON("trains.json", function(data){
   schedule = data;
-  updateTrains();
+  //updateTrains();
   setInterval(updateTrains, 200);
 });
 
