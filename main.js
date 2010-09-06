@@ -33,6 +33,7 @@ stations = {
 COLOR_LIMITED = "#F7E89D";
 COLOR_BULLET = "#F0B2A1";
 
+/*
 $(function(){
   $('#system_map').click(function(evt){
     topOffset = $(this).offset().top;
@@ -41,6 +42,7 @@ $(function(){
     console.log("["+(evt.pageX-leftOffset)+", "+(evt.pageY-topOffset)+"],");
   });
 });
+*/
 
 var img = new Image();
 img.onload = function(){
@@ -76,28 +78,29 @@ function drawTrain(x, y, num){
   ctx.fillStyle = "black";
   ctx.font = "18px arial";
   ctx.fillText(num, x-16, y+6);
-  /*
-  ctx.beginPath();
-  ctx.arc(x, y, 11, 0, Math.PI*2, false);
-  ctx.fill();
-  */
 }
 
-function interpolateTrainPosition(startStation, endStation, position){
-  var x = stations[startStation][0];
-  var y = stations[startStation][1];
+function interpolateTrainPosition(start, end){
+  var startTime = new Date();
+  startTime.setHours(start[1].split(":")[0]);
+  startTime.setMinutes(start[1].split(":")[1]);
+  startTime.setSeconds(0);
+  var endTime = new Date();
+  endTime.setHours(end[1].split(":")[0]);
+  endTime.setMinutes(end[1].split(":")[1]);
+  endTime.setSeconds(0);
+  var now = new Date();
+  var segmentDuration = endTime-startTime;
+  var segmentCompleted = now-startTime;
+
+  var x = stations[start[0]][0];
+  var y = stations[start[0]][1];
   
-  var xdist = stations[endStation][0]-x;
-  var ydist = stations[endStation][1]-y;
+  var xdist = stations[end[0]][0]-x;
+  var ydist = stations[end[0]][1]-y;
 
+  position = segmentCompleted/segmentDuration;
   return [x+(xdist*position), y+(ydist*position)];
-}
-
-/* b-a in minutes */
-function timeSubtract(a, b){
-  aparts = a.split(":");
-  bparts = b.split(":");
-  return (aparts[0]*60+aparts[1]) - (bparts[0]*60+bparts[1]);
 }
 
 /* Given a train, figure out where on the line it should be right now */
@@ -107,10 +110,7 @@ function placeTrain(train){
   for(var idx = 0; idx < thisTrain.length; idx++){
     if(now < thisTrain[idx][1]){
       /* it's between thisTrain[idx-1] and thisTrain[idx] */
-      /* TODO: higher-resolution interpolation */
-      var segmentDuration = timeSubtract(thisTrain[idx][1], thisTrain[idx-1][1]);
-      var segmentCompleted = timeSubtract(now, thisTrain[idx-1][1]);
-      return interpolateTrainPosition(thisTrain[idx-1][0], thisTrain[idx][0], segmentCompleted/segmentDuration);
+      return interpolateTrainPosition(thisTrain[idx-1], thisTrain[idx]);
     }
   }
 }
@@ -139,6 +139,6 @@ function updateTrains(){
 $.getJSON("trains.json", function(data){
   schedule = data;
   updateTrains();
-  setInterval(updateTrains, 1000);
+  setInterval(updateTrains, 200);
 });
 
