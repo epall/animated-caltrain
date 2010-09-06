@@ -1,0 +1,5926 @@
+{
+  "264": [
+    [
+      "San Francisco",
+      "16:19"
+    ],
+    [
+      "San Bruno",
+      "16:33"
+    ],
+    [
+      "Burlingame",
+      "16:38"
+    ],
+    [
+      "San Mateo",
+      "16:42"
+    ],
+    [
+      "Hillsdale",
+      "16:47"
+    ],
+    [
+      "San Carlos",
+      "16:51"
+    ],
+    [
+      "Palo Alto",
+      "17:01"
+    ],
+    [
+      "California Ave",
+      "17:05"
+    ],
+    [
+      "Mountain View",
+      "17:11"
+    ],
+    [
+      "Sunnyvale",
+      "17:16"
+    ],
+    [
+      "San Jose",
+      "17:27"
+    ]
+  ],
+  "102": [
+    [
+      "San Francisco",
+      "4:55"
+    ],
+    [
+      "22nd Street",
+      "5:00"
+    ],
+    [
+      "Bayshore",
+      "5:05"
+    ],
+    [
+      "So. San Francisco",
+      "5:11"
+    ],
+    [
+      "San Bruno",
+      "5:15"
+    ],
+    [
+      "Millbrae",
+      "5:19"
+    ],
+    [
+      "Burlingame",
+      "5:23"
+    ],
+    [
+      "San Mateo",
+      "5:26"
+    ],
+    [
+      "Hayward Park",
+      "5:29"
+    ],
+    [
+      "Hillsdale",
+      "5:32"
+    ],
+    [
+      "Belmont",
+      "5:35"
+    ],
+    [
+      "San Carlos",
+      "5:38"
+    ],
+    [
+      "Redwood City",
+      "5:43"
+    ],
+    [
+      "Menlo Park",
+      "5:48"
+    ],
+    [
+      "Palo Alto",
+      "5:51"
+    ],
+    [
+      "California Ave",
+      "5:55"
+    ],
+    [
+      "San Antonio",
+      "5:59"
+    ],
+    [
+      "Mountain View",
+      "6:03"
+    ],
+    [
+      "Sunnyvale",
+      "6:08"
+    ],
+    [
+      "Lawrence",
+      "6:12"
+    ],
+    [
+      "Santa Clara",
+      "6:17"
+    ],
+    [
+      "San Jose",
+      "6:26"
+    ]
+  ],
+  "285": [
+    [
+      "Tamien",
+      "18:24"
+    ],
+    [
+      "San Jose",
+      "18:31"
+    ],
+    [
+      "Lawrence",
+      "18:39"
+    ],
+    [
+      "Mountain View",
+      "18:46"
+    ],
+    [
+      "Palo Alto",
+      "18:54"
+    ],
+    [
+      "Menlo Park",
+      "18:57"
+    ],
+    [
+      "San Carlos",
+      "19:04"
+    ],
+    [
+      "Hillsdale",
+      "19:08"
+    ],
+    [
+      "San Mateo",
+      "19:12"
+    ],
+    [
+      "Burlingame",
+      "19:15"
+    ],
+    [
+      "San Bruno",
+      "19:22"
+    ],
+    [
+      "San Francisco",
+      "19:39"
+    ]
+  ],
+  "103": [
+    [
+      "Tamien",
+      "4:58"
+    ],
+    [
+      "San Jose",
+      "5:05"
+    ],
+    [
+      "Santa Clara",
+      "5:10"
+    ],
+    [
+      "Lawrence",
+      "5:15"
+    ],
+    [
+      "Sunnyvale",
+      "5:19"
+    ],
+    [
+      "Mountain View",
+      "5:24"
+    ],
+    [
+      "San Antonio",
+      "5:28"
+    ],
+    [
+      "California Ave",
+      "5:32"
+    ],
+    [
+      "Palo Alto",
+      "5:36"
+    ],
+    [
+      "Menlo Park",
+      "5:39"
+    ],
+    [
+      "Redwood City",
+      "5:44"
+    ],
+    [
+      "San Carlos",
+      "5:48"
+    ],
+    [
+      "Belmont",
+      "5:51"
+    ],
+    [
+      "Hillsdale",
+      "5:54"
+    ],
+    [
+      "Hayward Park",
+      "5:57"
+    ],
+    [
+      "San Mateo",
+      "6:00"
+    ],
+    [
+      "Burlingame",
+      "6:03"
+    ],
+    [
+      "Millbrae",
+      "6:08"
+    ],
+    [
+      "San Bruno",
+      "6:12"
+    ],
+    [
+      "So. San Francisco",
+      "6:16"
+    ],
+    [
+      "Bayshore",
+      "6:22"
+    ],
+    [
+      "22nd Street",
+      "6:27"
+    ],
+    [
+      "San Francisco",
+      "6:36"
+    ]
+  ],
+  "322": [
+    [
+      "San Francisco",
+      "7:59"
+    ],
+    [
+      "22nd Street",
+      "8:04"
+    ],
+    [
+      "Millbrae",
+      "8:17"
+    ],
+    [
+      "Redwood City",
+      "8:30"
+    ],
+    [
+      "Menlo Park",
+      "8:35"
+    ],
+    [
+      "Mountain View",
+      "8:44"
+    ],
+    [
+      "San Jose",
+      "8:58"
+    ]
+  ],
+  "386": [
+    [
+      "San Francisco",
+      "18:33"
+    ],
+    [
+      "Millbrae",
+      "18:49"
+    ],
+    [
+      "San Mateo",
+      "18:57"
+    ],
+    [
+      "Redwood City",
+      "19:06"
+    ],
+    [
+      "Palo Alto",
+      "19:12"
+    ],
+    [
+      "Sunnyvale",
+      "19:21"
+    ],
+    [
+      "San Jose",
+      "19:32"
+    ],
+    [
+      "Tamien",
+      "19:39"
+    ]
+  ],
+  "266": [
+    [
+      "San Francisco",
+      "16:27"
+    ],
+    [
+      "22nd Street",
+      "16:32"
+    ],
+    [
+      "Bayshore",
+      "16:40"
+    ],
+    [
+      "So. San Francisco",
+      "16:48"
+    ],
+    [
+      "San Bruno",
+      "16:52"
+    ],
+    [
+      "Millbrae",
+      "16:56"
+    ],
+    [
+      "Burlingame",
+      "17:00"
+    ],
+    [
+      "San Mateo",
+      "17:04"
+    ],
+    [
+      "Hayward Park",
+      "17:07"
+    ],
+    [
+      "Hillsdale",
+      "17:11"
+    ],
+    [
+      "Belmont",
+      "17:14"
+    ],
+    [
+      "San Carlos",
+      "17:18"
+    ],
+    [
+      "Redwood City",
+      "17:22"
+    ],
+    [
+      "Menlo Park",
+      "17:28"
+    ],
+    [
+      "Mountain View",
+      "17:36"
+    ],
+    [
+      "Santa Clara",
+      "17:47"
+    ],
+    [
+      "San Jose",
+      "17:55"
+    ]
+  ],
+  "104": [
+    [
+      "San Francisco",
+      "5:25"
+    ],
+    [
+      "22nd Street",
+      "5:30"
+    ],
+    [
+      "Bayshore",
+      "5:35"
+    ],
+    [
+      "So. San Francisco",
+      "5:41"
+    ],
+    [
+      "San Bruno",
+      "5:45"
+    ],
+    [
+      "Millbrae",
+      "5:49"
+    ],
+    [
+      "Burlingame",
+      "5:53"
+    ],
+    [
+      "San Mateo",
+      "5:56"
+    ],
+    [
+      "Hayward Park",
+      "5:59"
+    ],
+    [
+      "Hillsdale",
+      "6:02"
+    ],
+    [
+      "Belmont",
+      "6:05"
+    ],
+    [
+      "San Carlos",
+      "6:08"
+    ],
+    [
+      "Redwood City",
+      "6:13"
+    ],
+    [
+      "Menlo Park",
+      "6:18"
+    ],
+    [
+      "Palo Alto",
+      "6:21"
+    ],
+    [
+      "California Ave",
+      "6:25"
+    ],
+    [
+      "San Antonio",
+      "6:29"
+    ],
+    [
+      "Mountain View",
+      "6:33"
+    ],
+    [
+      "Sunnyvale",
+      "6:38"
+    ],
+    [
+      "Lawrence",
+      "6:42"
+    ],
+    [
+      "Santa Clara",
+      "6:47"
+    ],
+    [
+      "San Jose",
+      "6:56"
+    ],
+    [
+      "Tamien",
+      "7:03"
+    ]
+  ],
+  "323": [
+    [
+      "San Jose",
+      "7:45"
+    ],
+    [
+      "Mountain View",
+      "7:57"
+    ],
+    [
+      "Palo Alto",
+      "8:05"
+    ],
+    [
+      "Hillsdale",
+      "8:16"
+    ],
+    [
+      "Millbrae",
+      "8:24"
+    ],
+    [
+      "San Francisco",
+      "8:42"
+    ]
+  ],
+  "146": [
+    [
+      "San Francisco",
+      "12:07"
+    ],
+    [
+      "22nd Street",
+      "12:12"
+    ],
+    [
+      "Bayshore",
+      "12:17"
+    ],
+    [
+      "So. San Francisco",
+      "12:23"
+    ],
+    [
+      "San Bruno",
+      "12:27"
+    ],
+    [
+      "Millbrae",
+      "12:31"
+    ],
+    [
+      "Burlingame",
+      "12:35"
+    ],
+    [
+      "San Mateo",
+      "12:38"
+    ],
+    [
+      "Hayward Park",
+      "12:41"
+    ],
+    [
+      "Hillsdale",
+      "12:44"
+    ],
+    [
+      "Belmont",
+      "12:47"
+    ],
+    [
+      "San Carlos",
+      "12:50"
+    ],
+    [
+      "Redwood City",
+      "12:55"
+    ],
+    [
+      "Menlo Park",
+      "13:00"
+    ],
+    [
+      "Palo Alto",
+      "13:03"
+    ],
+    [
+      "California Ave",
+      "13:07"
+    ],
+    [
+      "San Antonio",
+      "13:11"
+    ],
+    [
+      "Mountain View",
+      "13:15"
+    ],
+    [
+      "Sunnyvale",
+      "13:20"
+    ],
+    [
+      "Lawrence",
+      "13:24"
+    ],
+    [
+      "Santa Clara",
+      "13:29"
+    ],
+    [
+      "San Jose",
+      "13:38"
+    ]
+  ],
+  "365": [
+    [
+      "San Jose",
+      "16:25"
+    ],
+    [
+      "Mountain View",
+      "16:37"
+    ],
+    [
+      "Menlo Park",
+      "16:46"
+    ],
+    [
+      "Redwood City",
+      "16:52"
+    ],
+    [
+      "Millbrae",
+      "17:05"
+    ],
+    [
+      "22nd Street",
+      "17:17"
+    ],
+    [
+      "San Francisco",
+      "17:24"
+    ]
+  ],
+  "287": [
+    [
+      "San Jose",
+      "18:45"
+    ],
+    [
+      "Lawrence",
+      "18:53"
+    ],
+    [
+      "Mountain View",
+      "19:00"
+    ],
+    [
+      "California Ave",
+      "19:06"
+    ],
+    [
+      "Palo Alto",
+      "19:10"
+    ],
+    [
+      "Menlo Park",
+      "19:13"
+    ],
+    [
+      "Redwood City",
+      "19:19"
+    ],
+    [
+      "San Carlos",
+      "19:23"
+    ],
+    [
+      "Hillsdale",
+      "19:28"
+    ],
+    [
+      "San Mateo",
+      "19:32"
+    ],
+    [
+      "Burlingame",
+      "19:35"
+    ],
+    [
+      "Millbrae",
+      "19:41"
+    ],
+    [
+      "22nd Street",
+      "19:53"
+    ],
+    [
+      "San Francisco",
+      "20:00"
+    ]
+  ],
+  "190": [
+    [
+      "San Francisco",
+      "19:30"
+    ],
+    [
+      "22nd Street",
+      "19:35"
+    ],
+    [
+      "Bayshore",
+      "19:40"
+    ],
+    [
+      "So. San Francisco",
+      "19:46"
+    ],
+    [
+      "San Bruno",
+      "19:50"
+    ],
+    [
+      "Millbrae",
+      "19:54"
+    ],
+    [
+      "Burlingame",
+      "19:58"
+    ],
+    [
+      "San Mateo",
+      "20:01"
+    ],
+    [
+      "Hayward Park",
+      "20:04"
+    ],
+    [
+      "Hillsdale",
+      "20:07"
+    ],
+    [
+      "Belmont",
+      "20:10"
+    ],
+    [
+      "San Carlos",
+      "20:13"
+    ],
+    [
+      "Redwood City",
+      "20:18"
+    ],
+    [
+      "Menlo Park",
+      "20:23"
+    ],
+    [
+      "Palo Alto",
+      "20:26"
+    ],
+    [
+      "California Ave",
+      "20:30"
+    ],
+    [
+      "San Antonio",
+      "20:34"
+    ],
+    [
+      "Mountain View",
+      "20:38"
+    ],
+    [
+      "Sunnyvale",
+      "20:43"
+    ],
+    [
+      "Lawrence",
+      "20:47"
+    ],
+    [
+      "Santa Clara",
+      "20:52"
+    ],
+    [
+      "San Jose",
+      "21:01"
+    ]
+  ],
+  "288": [
+    [
+      "San Francisco",
+      "18:56"
+    ],
+    [
+      "So. San Francisco",
+      "19:08"
+    ],
+    [
+      "Millbrae",
+      "19:14"
+    ],
+    [
+      "Hillsdale",
+      "19:22"
+    ],
+    [
+      "Redwood City",
+      "19:28"
+    ],
+    [
+      "Menlo Park",
+      "19:34"
+    ],
+    [
+      "Palo Alto",
+      "19:38"
+    ],
+    [
+      "California Ave",
+      "19:42"
+    ],
+    [
+      "San Antonio",
+      "19:46"
+    ],
+    [
+      "Mountain View",
+      "19:50"
+    ],
+    [
+      "Sunnyvale",
+      "19:55"
+    ],
+    [
+      "Lawrence",
+      "19:59"
+    ],
+    [
+      "Santa Clara",
+      "20:04"
+    ],
+    [
+      "San Jose",
+      "20:12"
+    ],
+    [
+      "Tamien",
+      "20:19"
+    ]
+  ],
+  "225": [
+    [
+      "San Jose",
+      "7:50"
+    ],
+    [
+      "Sunnyvale",
+      "8:00"
+    ],
+    [
+      "Mountain View",
+      "8:05"
+    ],
+    [
+      "California Ave",
+      "8:11"
+    ],
+    [
+      "Palo Alto",
+      "8:16"
+    ],
+    [
+      "San Carlos",
+      "8:24"
+    ],
+    [
+      "Hillsdale",
+      "8:28"
+    ],
+    [
+      "San Mateo",
+      "8:32"
+    ],
+    [
+      "Burlingame",
+      "8:35"
+    ],
+    [
+      "San Bruno",
+      "8:42"
+    ],
+    [
+      "San Francisco",
+      "8:57"
+    ]
+  ],
+  "324": [
+    [
+      "San Francisco",
+      "8:14"
+    ],
+    [
+      "22nd Street",
+      "8:19"
+    ],
+    [
+      "Millbrae",
+      "8:32"
+    ],
+    [
+      "Hillsdale",
+      "8:40"
+    ],
+    [
+      "Palo Alto",
+      "8:51"
+    ],
+    [
+      "Mountain View",
+      "8:58"
+    ],
+    [
+      "San Jose",
+      "9:13"
+    ]
+  ],
+  "147": [
+    [
+      "San Jose",
+      "12:10"
+    ],
+    [
+      "Santa Clara",
+      "12:15"
+    ],
+    [
+      "Lawrence",
+      "12:20"
+    ],
+    [
+      "Sunnyvale",
+      "12:24"
+    ],
+    [
+      "Mountain View",
+      "12:29"
+    ],
+    [
+      "San Antonio",
+      "12:33"
+    ],
+    [
+      "California Ave",
+      "12:37"
+    ],
+    [
+      "Palo Alto",
+      "12:41"
+    ],
+    [
+      "Menlo Park",
+      "12:44"
+    ],
+    [
+      "Redwood City",
+      "12:49"
+    ],
+    [
+      "San Carlos",
+      "12:53"
+    ],
+    [
+      "Belmont",
+      "12:56"
+    ],
+    [
+      "Hillsdale",
+      "12:59"
+    ],
+    [
+      "Hayward Park",
+      "13:02"
+    ],
+    [
+      "San Mateo",
+      "13:05"
+    ],
+    [
+      "Burlingame",
+      "13:08"
+    ],
+    [
+      "Millbrae",
+      "13:13"
+    ],
+    [
+      "San Bruno",
+      "13:17"
+    ],
+    [
+      "So. San Francisco",
+      "13:21"
+    ],
+    [
+      "Bayshore",
+      "13:27"
+    ],
+    [
+      "22nd Street",
+      "13:32"
+    ],
+    [
+      "San Francisco",
+      "13:41"
+    ]
+  ],
+  "267": [
+    [
+      "Tamien",
+      "16:32"
+    ],
+    [
+      "San Jose",
+      "16:39"
+    ],
+    [
+      "Santa Clara",
+      "16:44"
+    ],
+    [
+      "Lawrence",
+      "16:52"
+    ],
+    [
+      "Sunnyvale",
+      "16:58"
+    ],
+    [
+      "Mountain View",
+      "17:03"
+    ],
+    [
+      "San Antonio",
+      "17:07"
+    ],
+    [
+      "California Ave",
+      "17:11"
+    ],
+    [
+      "Palo Alto",
+      "17:16"
+    ],
+    [
+      "Menlo Park",
+      "17:19"
+    ],
+    [
+      "Redwood City",
+      "17:25"
+    ],
+    [
+      "San Carlos",
+      "17:29"
+    ],
+    [
+      "San Mateo",
+      "17:36"
+    ],
+    [
+      "Millbrae",
+      "17:43"
+    ],
+    [
+      "22nd Street",
+      "17:55"
+    ],
+    [
+      "San Francisco",
+      "18:02"
+    ]
+  ],
+  "189": [
+    [
+      "San Jose",
+      "18:50"
+    ],
+    [
+      "Santa Clara",
+      "18:55"
+    ],
+    [
+      "Lawrence",
+      "19:00"
+    ],
+    [
+      "Sunnyvale",
+      "19:04"
+    ],
+    [
+      "Mountain View",
+      "19:09"
+    ],
+    [
+      "San Antonio",
+      "19:13"
+    ],
+    [
+      "California Ave",
+      "19:17"
+    ],
+    [
+      "Palo Alto",
+      "19:21"
+    ],
+    [
+      "Menlo Park",
+      "19:24"
+    ],
+    [
+      "Redwood City",
+      "19:29"
+    ],
+    [
+      "San Carlos",
+      "19:33"
+    ],
+    [
+      "Belmont",
+      "19:36"
+    ],
+    [
+      "Hillsdale",
+      "19:39"
+    ],
+    [
+      "Hayward Park",
+      "19:42"
+    ],
+    [
+      "San Mateo",
+      "19:45"
+    ],
+    [
+      "Burlingame",
+      "19:48"
+    ],
+    [
+      "Millbrae",
+      "19:53"
+    ],
+    [
+      "San Bruno",
+      "19:57"
+    ],
+    [
+      "So. San Francisco",
+      "20:01"
+    ],
+    [
+      "Bayshore",
+      "20:07"
+    ],
+    [
+      "22nd Street",
+      "20:12"
+    ],
+    [
+      "San Francisco",
+      "20:21"
+    ]
+  ],
+  "191": [
+    [
+      "San Jose",
+      "19:30"
+    ],
+    [
+      "Santa Clara",
+      "19:35"
+    ],
+    [
+      "Lawrence",
+      "19:40"
+    ],
+    [
+      "Sunnyvale",
+      "19:44"
+    ],
+    [
+      "Mountain View",
+      "19:49"
+    ],
+    [
+      "San Antonio",
+      "19:53"
+    ],
+    [
+      "California Ave",
+      "19:57"
+    ],
+    [
+      "Palo Alto",
+      "20:01"
+    ],
+    [
+      "Menlo Park",
+      "20:04"
+    ],
+    [
+      "Redwood City",
+      "20:09"
+    ],
+    [
+      "San Carlos",
+      "20:13"
+    ],
+    [
+      "Belmont",
+      "20:16"
+    ],
+    [
+      "Hillsdale",
+      "20:19"
+    ],
+    [
+      "Hayward Park",
+      "20:22"
+    ],
+    [
+      "San Mateo",
+      "20:25"
+    ],
+    [
+      "Burlingame",
+      "20:28"
+    ],
+    [
+      "Millbrae",
+      "20:33"
+    ],
+    [
+      "San Bruno",
+      "20:37"
+    ],
+    [
+      "So. San Francisco",
+      "20:41"
+    ],
+    [
+      "Bayshore",
+      "20:47"
+    ],
+    [
+      "22nd Street",
+      "20:52"
+    ],
+    [
+      "San Francisco",
+      "21:01"
+    ]
+  ],
+  "226": [
+    [
+      "San Francisco",
+      "8:19"
+    ],
+    [
+      "San Bruno",
+      "8:33"
+    ],
+    [
+      "Burlingame",
+      "8:38"
+    ],
+    [
+      "San Mateo",
+      "8:42"
+    ],
+    [
+      "Hillsdale",
+      "8:46"
+    ],
+    [
+      "San Carlos",
+      "8:50"
+    ],
+    [
+      "Menlo Park",
+      "8:58"
+    ],
+    [
+      "Palo Alto",
+      "9:01"
+    ],
+    [
+      "Mountain View",
+      "9:09"
+    ],
+    [
+      "Lawrence",
+      "9:16"
+    ],
+    [
+      "San Jose",
+      "9:28"
+    ]
+  ],
+  "192": [
+    [
+      "San Francisco",
+      "20:40"
+    ],
+    [
+      "22nd Street",
+      "20:45"
+    ],
+    [
+      "Bayshore",
+      "20:50"
+    ],
+    [
+      "So. San Francisco",
+      "20:56"
+    ],
+    [
+      "San Bruno",
+      "21:00"
+    ],
+    [
+      "Millbrae",
+      "21:04"
+    ],
+    [
+      "Burlingame",
+      "21:08"
+    ],
+    [
+      "San Mateo",
+      "21:11"
+    ],
+    [
+      "Hayward Park",
+      "21:14"
+    ],
+    [
+      "Hillsdale",
+      "21:17"
+    ],
+    [
+      "Belmont",
+      "21:20"
+    ],
+    [
+      "San Carlos",
+      "21:23"
+    ],
+    [
+      "Redwood City",
+      "21:28"
+    ],
+    [
+      "Menlo Park",
+      "21:33"
+    ],
+    [
+      "Palo Alto",
+      "21:36"
+    ],
+    [
+      "California Ave",
+      "21:40"
+    ],
+    [
+      "San Antonio",
+      "21:44"
+    ],
+    [
+      "Mountain View",
+      "21:48"
+    ],
+    [
+      "Sunnyvale",
+      "21:53"
+    ],
+    [
+      "Lawrence",
+      "21:57"
+    ],
+    [
+      "Santa Clara",
+      "22:02"
+    ],
+    [
+      "San Jose",
+      "22:11"
+    ],
+    [
+      "Tamien",
+      "22:18"
+    ]
+  ],
+  "270": [
+    [
+      "San Francisco",
+      "16:56"
+    ],
+    [
+      "So. San Francisco",
+      "17:08"
+    ],
+    [
+      "Millbrae",
+      "17:14"
+    ],
+    [
+      "Hillsdale",
+      "17:22"
+    ],
+    [
+      "Redwood City",
+      "17:28"
+    ],
+    [
+      "Menlo Park",
+      "17:34"
+    ],
+    [
+      "Palo Alto",
+      "17:38"
+    ],
+    [
+      "California Ave",
+      "17:42"
+    ],
+    [
+      "San Antonio",
+      "17:46"
+    ],
+    [
+      "Mountain View",
+      "17:50"
+    ],
+    [
+      "Sunnyvale",
+      "17:55"
+    ],
+    [
+      "Lawrence",
+      "18:01"
+    ],
+    [
+      "Santa Clara",
+      "18:08"
+    ],
+    [
+      "San Jose",
+      "18:16"
+    ],
+    [
+      "Tamien",
+      "18:22"
+    ],
+    [
+      "Capitol",
+      "18:29"
+    ],
+    [
+      "Blossom Hill",
+      "18:35"
+    ],
+    [
+      "Morgan Hill",
+      "18:48"
+    ],
+    [
+      "San Martin",
+      "18:54"
+    ],
+    [
+      "Gilroy",
+      "19:07"
+    ]
+  ],
+  "368": [
+    [
+      "San Francisco",
+      "16:33"
+    ],
+    [
+      "Millbrae",
+      "16:49"
+    ],
+    [
+      "San Mateo",
+      "16:57"
+    ],
+    [
+      "Redwood City",
+      "17:06"
+    ],
+    [
+      "Palo Alto",
+      "17:12"
+    ],
+    [
+      "Sunnyvale",
+      "17:21"
+    ],
+    [
+      "San Jose",
+      "17:32"
+    ],
+    [
+      "Tamien",
+      "17:39"
+    ]
+  ],
+  "150": [
+    [
+      "San Francisco",
+      "13:07"
+    ],
+    [
+      "22nd Street",
+      "13:12"
+    ],
+    [
+      "Bayshore",
+      "13:17"
+    ],
+    [
+      "So. San Francisco",
+      "13:23"
+    ],
+    [
+      "San Bruno",
+      "13:27"
+    ],
+    [
+      "Millbrae",
+      "13:31"
+    ],
+    [
+      "Burlingame",
+      "13:35"
+    ],
+    [
+      "San Mateo",
+      "13:38"
+    ],
+    [
+      "Hayward Park",
+      "13:41"
+    ],
+    [
+      "Hillsdale",
+      "13:44"
+    ],
+    [
+      "Belmont",
+      "13:47"
+    ],
+    [
+      "San Carlos",
+      "13:50"
+    ],
+    [
+      "Redwood City",
+      "13:55"
+    ],
+    [
+      "Menlo Park",
+      "14:00"
+    ],
+    [
+      "Palo Alto",
+      "14:03"
+    ],
+    [
+      "California Ave",
+      "14:07"
+    ],
+    [
+      "San Antonio",
+      "14:11"
+    ],
+    [
+      "Mountain View",
+      "14:15"
+    ],
+    [
+      "Sunnyvale",
+      "14:20"
+    ],
+    [
+      "Lawrence",
+      "14:24"
+    ],
+    [
+      "Santa Clara",
+      "14:29"
+    ],
+    [
+      "San Jose",
+      "14:38"
+    ]
+  ],
+  "305": [
+    [
+      "San Jose",
+      "5:45"
+    ],
+    [
+      "Mountain View",
+      "5:57"
+    ],
+    [
+      "Palo Alto",
+      "6:05"
+    ],
+    [
+      "Hillsdale",
+      "6:16"
+    ],
+    [
+      "Millbrae",
+      "6:24"
+    ],
+    [
+      "San Francisco",
+      "6:42"
+    ]
+  ],
+  "206": [
+    [
+      "San Francisco",
+      "6:11"
+    ],
+    [
+      "22nd Street",
+      "6:16"
+    ],
+    [
+      "Millbrae",
+      "6:29"
+    ],
+    [
+      "Burlingame",
+      "6:33"
+    ],
+    [
+      "San Mateo",
+      "6:36"
+    ],
+    [
+      "Hillsdale",
+      "6:40"
+    ],
+    [
+      "San Carlos",
+      "6:44"
+    ],
+    [
+      "Redwood City",
+      "6:49"
+    ],
+    [
+      "Menlo Park",
+      "6:54"
+    ],
+    [
+      "Palo Alto",
+      "6:57"
+    ],
+    [
+      "California Ave",
+      "7:01"
+    ],
+    [
+      "Mountain View",
+      "7:07"
+    ],
+    [
+      "Lawrence",
+      "7:12"
+    ],
+    [
+      "San Jose",
+      "7:24"
+    ]
+  ],
+  "227": [
+    [
+      "Gilroy",
+      "7:05"
+    ],
+    [
+      "San Martin",
+      "7:14"
+    ],
+    [
+      "Morgan Hill",
+      "7:20"
+    ],
+    [
+      "Blossom Hill",
+      "7:33"
+    ],
+    [
+      "Capitol",
+      "7:39"
+    ],
+    [
+      "Tamien",
+      "7:47"
+    ],
+    [
+      "San Jose",
+      "7:55"
+    ],
+    [
+      "College Park",
+      "7:58"
+    ],
+    [
+      "Santa Clara",
+      "8:02"
+    ],
+    [
+      "Lawrence",
+      "8:12"
+    ],
+    [
+      "Sunnyvale",
+      "8:18"
+    ],
+    [
+      "Mountain View",
+      "8:23"
+    ],
+    [
+      "San Antonio",
+      "8:27"
+    ],
+    [
+      "California Ave",
+      "8:31"
+    ],
+    [
+      "Palo Alto",
+      "8:36"
+    ],
+    [
+      "Menlo Park",
+      "8:39"
+    ],
+    [
+      "Redwood City",
+      "8:45"
+    ],
+    [
+      "Hillsdale",
+      "8:51"
+    ],
+    [
+      "Millbrae",
+      "8:59"
+    ],
+    [
+      "So. San Francisco",
+      "9:05"
+    ],
+    [
+      "San Francisco",
+      "9:19"
+    ]
+  ],
+  "207": [
+    [
+      "Tamien",
+      "5:50"
+    ],
+    [
+      "San Jose",
+      "5:57"
+    ],
+    [
+      "Santa Clara",
+      "6:02"
+    ],
+    [
+      "Lawrence",
+      "6:12"
+    ],
+    [
+      "Sunnyvale",
+      "6:18"
+    ],
+    [
+      "Mountain View",
+      "6:23"
+    ],
+    [
+      "San Antonio",
+      "6:27"
+    ],
+    [
+      "California Ave",
+      "6:31"
+    ],
+    [
+      "Palo Alto",
+      "6:36"
+    ],
+    [
+      "Menlo Park",
+      "6:39"
+    ],
+    [
+      "Redwood City",
+      "6:45"
+    ],
+    [
+      "Hillsdale",
+      "6:51"
+    ],
+    [
+      "Millbrae",
+      "6:59"
+    ],
+    [
+      "So. San Francisco",
+      "7:05"
+    ],
+    [
+      "San Francisco",
+      "7:19"
+    ]
+  ],
+  "151": [
+    [
+      "San Jose",
+      "13:10"
+    ],
+    [
+      "Santa Clara",
+      "13:15"
+    ],
+    [
+      "Lawrence",
+      "13:20"
+    ],
+    [
+      "Sunnyvale",
+      "13:24"
+    ],
+    [
+      "Mountain View",
+      "13:29"
+    ],
+    [
+      "San Antonio",
+      "13:33"
+    ],
+    [
+      "California Ave",
+      "13:37"
+    ],
+    [
+      "Palo Alto",
+      "13:41"
+    ],
+    [
+      "Menlo Park",
+      "13:44"
+    ],
+    [
+      "Redwood City",
+      "13:49"
+    ],
+    [
+      "San Carlos",
+      "13:53"
+    ],
+    [
+      "Belmont",
+      "13:56"
+    ],
+    [
+      "Hillsdale",
+      "13:59"
+    ],
+    [
+      "Hayward Park",
+      "14:02"
+    ],
+    [
+      "San Mateo",
+      "14:05"
+    ],
+    [
+      "Burlingame",
+      "14:08"
+    ],
+    [
+      "Millbrae",
+      "14:13"
+    ],
+    [
+      "San Bruno",
+      "14:17"
+    ],
+    [
+      "So. San Francisco",
+      "14:21"
+    ],
+    [
+      "Bayshore",
+      "14:27"
+    ],
+    [
+      "22nd Street",
+      "14:32"
+    ],
+    [
+      "San Francisco",
+      "14:41"
+    ]
+  ],
+  "228": [
+    [
+      "San Francisco",
+      "8:24"
+    ],
+    [
+      "22nd Street",
+      "8:29"
+    ],
+    [
+      "Bayshore",
+      "8:34"
+    ],
+    [
+      "So. San Francisco",
+      "8:40"
+    ],
+    [
+      "San Bruno",
+      "8:44"
+    ],
+    [
+      "Millbrae",
+      "8:48"
+    ],
+    [
+      "Burlingame",
+      "8:52"
+    ],
+    [
+      "San Mateo",
+      "8:55"
+    ],
+    [
+      "Hayward Park",
+      "8:58"
+    ],
+    [
+      "Hillsdale",
+      "9:01"
+    ],
+    [
+      "Belmont",
+      "9:04"
+    ],
+    [
+      "San Carlos",
+      "9:07"
+    ],
+    [
+      "Redwood City",
+      "9:12"
+    ],
+    [
+      "Palo Alto",
+      "9:18"
+    ],
+    [
+      "Santa Clara",
+      "9:34"
+    ],
+    [
+      "San Jose",
+      "9:43"
+    ],
+    [
+      "Tamien",
+      "9:50"
+    ]
+  ],
+  "271": [
+    [
+      "Tamien",
+      "16:58"
+    ],
+    [
+      "San Jose",
+      "17:05"
+    ],
+    [
+      "Santa Clara",
+      "17:10"
+    ],
+    [
+      "Palo Alto",
+      "17:24"
+    ],
+    [
+      "Redwood City",
+      "17:31"
+    ],
+    [
+      "San Carlos",
+      "17:35"
+    ],
+    [
+      "Belmont",
+      "17:38"
+    ],
+    [
+      "Hillsdale",
+      "17:42"
+    ],
+    [
+      "Hayward Park",
+      "17:45"
+    ],
+    [
+      "San Mateo",
+      "17:48"
+    ],
+    [
+      "Burlingame",
+      "17:51"
+    ],
+    [
+      "Millbrae",
+      "17:57"
+    ],
+    [
+      "San Bruno",
+      "18:01"
+    ],
+    [
+      "So. San Francisco",
+      "18:05"
+    ],
+    [
+      "Bayshore",
+      "18:13"
+    ],
+    [
+      "22nd Street",
+      "18:21"
+    ],
+    [
+      "San Francisco",
+      "18:29"
+    ]
+  ],
+  "369": [
+    [
+      "San Jose",
+      "16:45"
+    ],
+    [
+      "Mountain View",
+      "16:58"
+    ],
+    [
+      "Palo Alto",
+      "17:06"
+    ],
+    [
+      "Hillsdale",
+      "17:17"
+    ],
+    [
+      "Millbrae",
+      "17:25"
+    ],
+    [
+      "22nd Street",
+      "17:37"
+    ],
+    [
+      "San Francisco",
+      "17:44"
+    ]
+  ],
+  "193": [
+    [
+      "Tamien",
+      "20:23"
+    ],
+    [
+      "San Jose",
+      "20:30"
+    ],
+    [
+      "Santa Clara",
+      "20:35"
+    ],
+    [
+      "Lawrence",
+      "20:40"
+    ],
+    [
+      "Sunnyvale",
+      "20:44"
+    ],
+    [
+      "Mountain View",
+      "20:49"
+    ],
+    [
+      "San Antonio",
+      "20:53"
+    ],
+    [
+      "California Ave",
+      "20:57"
+    ],
+    [
+      "Palo Alto",
+      "21:01"
+    ],
+    [
+      "Menlo Park",
+      "21:04"
+    ],
+    [
+      "Redwood City",
+      "21:09"
+    ],
+    [
+      "San Carlos",
+      "21:13"
+    ],
+    [
+      "Belmont",
+      "21:16"
+    ],
+    [
+      "Hillsdale",
+      "21:19"
+    ],
+    [
+      "Hayward Park",
+      "21:22"
+    ],
+    [
+      "San Mateo",
+      "21:25"
+    ],
+    [
+      "Burlingame",
+      "21:28"
+    ],
+    [
+      "Millbrae",
+      "21:33"
+    ],
+    [
+      "San Bruno",
+      "21:37"
+    ],
+    [
+      "So. San Francisco",
+      "21:41"
+    ],
+    [
+      "Bayshore",
+      "21:47"
+    ],
+    [
+      "22nd Street",
+      "21:52"
+    ],
+    [
+      "San Francisco",
+      "22:01"
+    ]
+  ],
+  "194": [
+    [
+      "San Francisco",
+      "21:40"
+    ],
+    [
+      "22nd Street",
+      "21:45"
+    ],
+    [
+      "Bayshore",
+      "21:50"
+    ],
+    [
+      "So. San Francisco",
+      "21:56"
+    ],
+    [
+      "San Bruno",
+      "22:00"
+    ],
+    [
+      "Millbrae",
+      "22:04"
+    ],
+    [
+      "Burlingame",
+      "22:08"
+    ],
+    [
+      "San Mateo",
+      "22:11"
+    ],
+    [
+      "Hayward Park",
+      "22:14"
+    ],
+    [
+      "Hillsdale",
+      "22:17"
+    ],
+    [
+      "Belmont",
+      "22:20"
+    ],
+    [
+      "San Carlos",
+      "22:23"
+    ],
+    [
+      "Redwood City",
+      "22:28"
+    ],
+    [
+      "Menlo Park",
+      "22:33"
+    ],
+    [
+      "Palo Alto",
+      "22:36"
+    ],
+    [
+      "California Ave",
+      "22:40"
+    ],
+    [
+      "San Antonio",
+      "22:44"
+    ],
+    [
+      "Mountain View",
+      "22:48"
+    ],
+    [
+      "Sunnyvale",
+      "22:53"
+    ],
+    [
+      "Lawrence",
+      "22:57"
+    ],
+    [
+      "Santa Clara",
+      "23:02"
+    ],
+    [
+      "San Jose",
+      "23:11"
+    ],
+    [
+      "Tamien",
+      "23:18"
+    ]
+  ],
+  "208": [
+    [
+      "San Francisco",
+      "6:24"
+    ],
+    [
+      "22nd Street",
+      "6:29"
+    ],
+    [
+      "Bayshore",
+      "6:34"
+    ],
+    [
+      "So. San Francisco",
+      "6:40"
+    ],
+    [
+      "San Bruno",
+      "6:44"
+    ],
+    [
+      "Millbrae",
+      "6:48"
+    ],
+    [
+      "Burlingame",
+      "6:52"
+    ],
+    [
+      "San Mateo",
+      "6:55"
+    ],
+    [
+      "Hayward Park",
+      "6:58"
+    ],
+    [
+      "Hillsdale",
+      "7:01"
+    ],
+    [
+      "Belmont",
+      "7:04"
+    ],
+    [
+      "San Carlos",
+      "7:07"
+    ],
+    [
+      "Redwood City",
+      "7:12"
+    ],
+    [
+      "Palo Alto",
+      "7:18"
+    ],
+    [
+      "Santa Clara",
+      "7:34"
+    ],
+    [
+      "San Jose",
+      "7:43"
+    ],
+    [
+      "Tamien",
+      "7:50"
+    ]
+  ],
+  "230": [
+    [
+      "San Francisco",
+      "8:44"
+    ],
+    [
+      "22nd Street",
+      "8:49"
+    ],
+    [
+      "Millbrae",
+      "9:01"
+    ],
+    [
+      "San Mateo",
+      "9:07"
+    ],
+    [
+      "San Carlos",
+      "9:13"
+    ],
+    [
+      "Redwood City",
+      "9:18"
+    ],
+    [
+      "Menlo Park",
+      "9:23"
+    ],
+    [
+      "Palo Alto",
+      "9:26"
+    ],
+    [
+      "California Ave",
+      "9:30"
+    ],
+    [
+      "San Antonio",
+      "9:34"
+    ],
+    [
+      "Mountain View",
+      "9:38"
+    ],
+    [
+      "Sunnyvale",
+      "9:43"
+    ],
+    [
+      "Lawrence",
+      "9:49*"
+    ],
+    [
+      "Santa Clara",
+      "9:56*"
+    ],
+    [
+      "San Jose",
+      "10:05"
+    ],
+    [
+      "Tamien",
+      "10:12"
+    ]
+  ],
+  "372": [
+    [
+      "San Francisco",
+      "17:14"
+    ],
+    [
+      "Millbrae",
+      "17:30"
+    ],
+    [
+      "Hillsdale",
+      "17:38"
+    ],
+    [
+      "Palo Alto",
+      "17:49"
+    ],
+    [
+      "Mountain View",
+      "17:56"
+    ],
+    [
+      "San Jose",
+      "18:11"
+    ]
+  ],
+  "210": [
+    [
+      "San Francisco",
+      "6:44"
+    ],
+    [
+      "22nd Street",
+      "6:49"
+    ],
+    [
+      "Millbrae",
+      "7:01"
+    ],
+    [
+      "San Mateo",
+      "7:07"
+    ],
+    [
+      "San Carlos",
+      "7:13"
+    ],
+    [
+      "Redwood City",
+      "7:18"
+    ],
+    [
+      "Menlo Park",
+      "7:23"
+    ],
+    [
+      "Palo Alto",
+      "7:26"
+    ],
+    [
+      "California Ave",
+      "7:30"
+    ],
+    [
+      "San Antonio",
+      "7:34"
+    ],
+    [
+      "Mountain View",
+      "7:38"
+    ],
+    [
+      "Sunnyvale",
+      "7:43"
+    ],
+    [
+      "Lawrence",
+      "7:49*"
+    ],
+    [
+      "Santa Clara",
+      "7:56*"
+    ],
+    [
+      "College Park",
+      "7:59*"
+    ],
+    [
+      "San Jose",
+      "8:06"
+    ],
+    [
+      "Tamien",
+      "8:13"
+    ]
+  ],
+  "231": [
+    [
+      "San Jose",
+      "8:22"
+    ],
+    [
+      "Santa Clara",
+      "8:27"
+    ],
+    [
+      "Mountain View",
+      "8:37"
+    ],
+    [
+      "Menlo Park",
+      "8:45"
+    ],
+    [
+      "Redwood City",
+      "8:51"
+    ],
+    [
+      "San Carlos",
+      "8:55"
+    ],
+    [
+      "Belmont",
+      "8:58"
+    ],
+    [
+      "Hillsdale",
+      "9:02"
+    ],
+    [
+      "Hayward Park",
+      "9:05"
+    ],
+    [
+      "San Mateo",
+      "9:08"
+    ],
+    [
+      "Burlingame",
+      "9:11"
+    ],
+    [
+      "Millbrae",
+      "9:17"
+    ],
+    [
+      "San Bruno",
+      "9:21"
+    ],
+    [
+      "So. San Francisco",
+      "9:25"
+    ],
+    [
+      "Bayshore",
+      "9:31"
+    ],
+    [
+      "22nd Street",
+      "9:37"
+    ],
+    [
+      "San Francisco",
+      "9:45"
+    ]
+  ],
+  "329": [
+    [
+      "Tamien",
+      "7:56"
+    ],
+    [
+      "San Jose",
+      "8:03"
+    ],
+    [
+      "Sunnyvale",
+      "8:13"
+    ],
+    [
+      "Palo Alto",
+      "8:23"
+    ],
+    [
+      "Redwood City",
+      "8:30"
+    ],
+    [
+      "San Mateo",
+      "8:39"
+    ],
+    [
+      "Millbrae",
+      "8:45"
+    ],
+    [
+      "San Francisco",
+      "9:02"
+    ]
+  ],
+  "195": [
+    [
+      "Tamien",
+      "21:23"
+    ],
+    [
+      "San Jose",
+      "21:30"
+    ],
+    [
+      "Santa Clara",
+      "21:35"
+    ],
+    [
+      "Lawrence",
+      "21:40"
+    ],
+    [
+      "Sunnyvale",
+      "21:44"
+    ],
+    [
+      "Mountain View",
+      "21:49"
+    ],
+    [
+      "San Antonio",
+      "21:53"
+    ],
+    [
+      "California Ave",
+      "21:57"
+    ],
+    [
+      "Palo Alto",
+      "22:01"
+    ],
+    [
+      "Menlo Park",
+      "22:04"
+    ],
+    [
+      "Redwood City",
+      "22:09"
+    ],
+    [
+      "San Carlos",
+      "22:13"
+    ],
+    [
+      "Belmont",
+      "22:16"
+    ],
+    [
+      "Hillsdale",
+      "22:19"
+    ],
+    [
+      "Hayward Park",
+      "22:22"
+    ],
+    [
+      "San Mateo",
+      "22:25"
+    ],
+    [
+      "Burlingame",
+      "22:28"
+    ],
+    [
+      "Millbrae",
+      "22:33"
+    ],
+    [
+      "San Bruno",
+      "22:37"
+    ],
+    [
+      "So. San Francisco",
+      "22:41"
+    ],
+    [
+      "Bayshore",
+      "22:47"
+    ],
+    [
+      "22nd Street",
+      "22:52"
+    ],
+    [
+      "San Francisco",
+      "23:01"
+    ]
+  ],
+  "196": [
+    [
+      "San Francisco",
+      "22:40"
+    ],
+    [
+      "22nd Street",
+      "22:45"
+    ],
+    [
+      "Bayshore",
+      "22:50"
+    ],
+    [
+      "So. San Francisco",
+      "22:56"
+    ],
+    [
+      "San Bruno",
+      "23:00"
+    ],
+    [
+      "Millbrae",
+      "23:04"
+    ],
+    [
+      "Burlingame",
+      "23:08"
+    ],
+    [
+      "San Mateo",
+      "23:11"
+    ],
+    [
+      "Hayward Park",
+      "23:14"
+    ],
+    [
+      "Hillsdale",
+      "23:17"
+    ],
+    [
+      "Belmont",
+      "23:20"
+    ],
+    [
+      "San Carlos",
+      "23:23"
+    ],
+    [
+      "Redwood City",
+      "23:28"
+    ],
+    [
+      "Menlo Park",
+      "23:33"
+    ],
+    [
+      "Palo Alto",
+      "23:36"
+    ],
+    [
+      "California Ave",
+      "23:40"
+    ],
+    [
+      "San Antonio",
+      "23:44"
+    ],
+    [
+      "Mountain View",
+      "23:48"
+    ],
+    [
+      "Sunnyvale",
+      "23:53"
+    ],
+    [
+      "Lawrence",
+      "23:57"
+    ],
+    [
+      "Santa Clara",
+      "12:02"
+    ],
+    [
+      "San Jose",
+      "12:11"
+    ]
+  ],
+  "274": [
+    [
+      "San Francisco",
+      "17:20"
+    ],
+    [
+      "San Bruno",
+      "17:34"
+    ],
+    [
+      "Burlingame",
+      "17:39"
+    ],
+    [
+      "San Mateo",
+      "17:43"
+    ],
+    [
+      "Hillsdale",
+      "17:48"
+    ],
+    [
+      "San Carlos",
+      "17:52"
+    ],
+    [
+      "Palo Alto",
+      "18:02"
+    ],
+    [
+      "California Ave",
+      "18:06"
+    ],
+    [
+      "Mountain View",
+      "18:12"
+    ],
+    [
+      "Sunnyvale",
+      "18:17"
+    ],
+    [
+      "San Jose",
+      "18:28"
+    ]
+  ],
+  "154": [
+    [
+      "San Francisco",
+      "14:07"
+    ],
+    [
+      "22nd Street",
+      "14:12"
+    ],
+    [
+      "Bayshore",
+      "14:17"
+    ],
+    [
+      "So. San Francisco",
+      "14:23"
+    ],
+    [
+      "San Bruno",
+      "14:27"
+    ],
+    [
+      "Millbrae",
+      "14:31"
+    ],
+    [
+      "Burlingame",
+      "14:35"
+    ],
+    [
+      "San Mateo",
+      "14:38"
+    ],
+    [
+      "Hayward Park",
+      "14:41"
+    ],
+    [
+      "Hillsdale",
+      "14:44"
+    ],
+    [
+      "Belmont",
+      "14:47"
+    ],
+    [
+      "San Carlos",
+      "14:50"
+    ],
+    [
+      "Redwood City",
+      "14:55"
+    ],
+    [
+      "Menlo Park",
+      "15:00"
+    ],
+    [
+      "Palo Alto",
+      "15:03"
+    ],
+    [
+      "California Ave",
+      "15:07"
+    ],
+    [
+      "San Antonio",
+      "15:11"
+    ],
+    [
+      "Mountain View",
+      "15:15"
+    ],
+    [
+      "Sunnyvale",
+      "15:20"
+    ],
+    [
+      "Lawrence",
+      "15:24"
+    ],
+    [
+      "Santa Clara",
+      "15:29"
+    ],
+    [
+      "San Jose",
+      "15:38"
+    ]
+  ],
+  "211": [
+    [
+      "San Jose",
+      "6:22"
+    ],
+    [
+      "Santa Clara",
+      "6:27"
+    ],
+    [
+      "Mountain View",
+      "6:37"
+    ],
+    [
+      "Menlo Park",
+      "6:45"
+    ],
+    [
+      "Redwood City",
+      "6:51"
+    ],
+    [
+      "San Carlos",
+      "6:55"
+    ],
+    [
+      "Belmont",
+      "6:58"
+    ],
+    [
+      "Hillsdale",
+      "7:02"
+    ],
+    [
+      "Hayward Park",
+      "7:05"
+    ],
+    [
+      "San Mateo",
+      "7:08"
+    ],
+    [
+      "Burlingame",
+      "7:11"
+    ],
+    [
+      "Millbrae",
+      "7:17"
+    ],
+    [
+      "San Bruno",
+      "7:21"
+    ],
+    [
+      "So. San Francisco",
+      "7:25"
+    ],
+    [
+      "Bayshore",
+      "7:33*"
+    ],
+    [
+      "22nd Street",
+      "7:40*"
+    ],
+    [
+      "San Francisco",
+      "7:48"
+    ]
+  ],
+  "309": [
+    [
+      "Tamien",
+      "5:56"
+    ],
+    [
+      "San Jose",
+      "6:03"
+    ],
+    [
+      "Sunnyvale",
+      "6:13"
+    ],
+    [
+      "Palo Alto",
+      "6:23"
+    ],
+    [
+      "Redwood City",
+      "6:30"
+    ],
+    [
+      "San Mateo",
+      "6:39"
+    ],
+    [
+      "Millbrae",
+      "6:45"
+    ],
+    [
+      "San Francisco",
+      "7:02"
+    ]
+  ],
+  "373": [
+    [
+      "San Jose",
+      "17:25"
+    ],
+    [
+      "Mountain View",
+      "17:37"
+    ],
+    [
+      "Menlo Park",
+      "17:46"
+    ],
+    [
+      "Redwood City",
+      "17:52"
+    ],
+    [
+      "Millbrae",
+      "18:05"
+    ],
+    [
+      "22nd Street",
+      "18:17"
+    ],
+    [
+      "San Francisco",
+      "18:24"
+    ]
+  ],
+  "233": [
+    [
+      "Tamien",
+      "8:33"
+    ],
+    [
+      "San Jose",
+      "8:40"
+    ],
+    [
+      "Santa Clara",
+      "8:45"
+    ],
+    [
+      "Lawrence",
+      "8:50"
+    ],
+    [
+      "Sunnyvale",
+      "8:54"
+    ],
+    [
+      "Mountain View",
+      "8:59"
+    ],
+    [
+      "San Antonio",
+      "9:03"
+    ],
+    [
+      "California Ave",
+      "9:07"
+    ],
+    [
+      "Palo Alto",
+      "9:11"
+    ],
+    [
+      "Menlo Park",
+      "9:14"
+    ],
+    [
+      "Redwood City",
+      "9:19"
+    ],
+    [
+      "San Carlos",
+      "9:23"
+    ],
+    [
+      "Belmont",
+      "9:26"
+    ],
+    [
+      "Hillsdale",
+      "9:29"
+    ],
+    [
+      "San Mateo",
+      "9:33"
+    ],
+    [
+      "Burlingame",
+      "9:36"
+    ],
+    [
+      "Millbrae",
+      "9:41"
+    ],
+    [
+      "San Bruno",
+      "9:45"
+    ],
+    [
+      "San Francisco",
+      "10:02"
+    ]
+  ],
+  "332": [
+    [
+      "San Francisco",
+      "8:59"
+    ],
+    [
+      "22nd Street",
+      "9:04"
+    ],
+    [
+      "Millbrae",
+      "9:17"
+    ],
+    [
+      "Redwood City",
+      "9:30"
+    ],
+    [
+      "Menlo Park",
+      "9:35"
+    ],
+    [
+      "Mountain View",
+      "9:44"
+    ],
+    [
+      "San Jose",
+      "9:58"
+    ]
+  ],
+  "134": [
+    [
+      "San Francisco",
+      "9:07"
+    ],
+    [
+      "22nd Street",
+      "9:12"
+    ],
+    [
+      "Bayshore",
+      "9:17"
+    ],
+    [
+      "So. San Francisco",
+      "9:23"
+    ],
+    [
+      "San Bruno",
+      "9:27"
+    ],
+    [
+      "Millbrae",
+      "9:31"
+    ],
+    [
+      "Burlingame",
+      "9:35"
+    ],
+    [
+      "San Mateo",
+      "9:38"
+    ],
+    [
+      "Hayward Park",
+      "9:41"
+    ],
+    [
+      "Hillsdale",
+      "9:44"
+    ],
+    [
+      "Belmont",
+      "9:47"
+    ],
+    [
+      "San Carlos",
+      "9:50"
+    ],
+    [
+      "Redwood City",
+      "9:55"
+    ],
+    [
+      "Menlo Park",
+      "10:00"
+    ],
+    [
+      "Palo Alto",
+      "10:03"
+    ],
+    [
+      "California Ave",
+      "10:07"
+    ],
+    [
+      "San Antonio",
+      "10:11"
+    ],
+    [
+      "Mountain View",
+      "10:15"
+    ],
+    [
+      "Sunnyvale",
+      "10:20"
+    ],
+    [
+      "Lawrence",
+      "10:24"
+    ],
+    [
+      "Santa Clara",
+      "10:29"
+    ],
+    [
+      "San Jose",
+      "10:38"
+    ]
+  ],
+  "155": [
+    [
+      "San Jose",
+      "14:10"
+    ],
+    [
+      "Santa Clara",
+      "14:15"
+    ],
+    [
+      "Lawrence",
+      "14:20"
+    ],
+    [
+      "Sunnyvale",
+      "14:24"
+    ],
+    [
+      "Mountain View",
+      "14:29"
+    ],
+    [
+      "San Antonio",
+      "14:33"
+    ],
+    [
+      "California Ave",
+      "14:37"
+    ],
+    [
+      "Palo Alto",
+      "14:41"
+    ],
+    [
+      "Menlo Park",
+      "14:44"
+    ],
+    [
+      "Redwood City",
+      "14:49"
+    ],
+    [
+      "San Carlos",
+      "14:53"
+    ],
+    [
+      "Belmont",
+      "14:56"
+    ],
+    [
+      "Hillsdale",
+      "14:59"
+    ],
+    [
+      "Hayward Park",
+      "15:02"
+    ],
+    [
+      "San Mateo",
+      "15:05"
+    ],
+    [
+      "Burlingame",
+      "15:08"
+    ],
+    [
+      "Millbrae",
+      "15:13"
+    ],
+    [
+      "San Bruno",
+      "15:17"
+    ],
+    [
+      "So. San Francisco",
+      "15:21"
+    ],
+    [
+      "Bayshore",
+      "15:27"
+    ],
+    [
+      "22nd Street",
+      "15:32"
+    ],
+    [
+      "San Francisco",
+      "15:41"
+    ]
+  ],
+  "275": [
+    [
+      "San Jose",
+      "17:31"
+    ],
+    [
+      "Lawrence",
+      "17:39"
+    ],
+    [
+      "Mountain View",
+      "17:46"
+    ],
+    [
+      "Palo Alto",
+      "17:54"
+    ],
+    [
+      "Menlo Park",
+      "17:57"
+    ],
+    [
+      "San Carlos",
+      "18:04"
+    ],
+    [
+      "Hillsdale",
+      "18:08"
+    ],
+    [
+      "San Mateo",
+      "18:12"
+    ],
+    [
+      "Burlingame",
+      "18:15"
+    ],
+    [
+      "San Bruno",
+      "18:22"
+    ],
+    [
+      "San Francisco",
+      "18:39"
+    ]
+  ],
+  "197": [
+    [
+      "San Jose",
+      "22:30"
+    ],
+    [
+      "Santa Clara",
+      "22:35"
+    ],
+    [
+      "Lawrence",
+      "22:40"
+    ],
+    [
+      "Sunnyvale",
+      "22:44"
+    ],
+    [
+      "Mountain View",
+      "22:49"
+    ],
+    [
+      "San Antonio",
+      "22:53"
+    ],
+    [
+      "California Ave",
+      "22:57"
+    ],
+    [
+      "Palo Alto",
+      "23:01"
+    ],
+    [
+      "Menlo Park",
+      "23:04"
+    ],
+    [
+      "Redwood City",
+      "23:09"
+    ],
+    [
+      "San Carlos",
+      "23:13"
+    ],
+    [
+      "Belmont",
+      "23:16"
+    ],
+    [
+      "Hillsdale",
+      "23:19"
+    ],
+    [
+      "Hayward Park",
+      "23:22"
+    ],
+    [
+      "San Mateo",
+      "23:25"
+    ],
+    [
+      "Burlingame",
+      "23:28"
+    ],
+    [
+      "Millbrae",
+      "23:33"
+    ],
+    [
+      "San Bruno",
+      "23:37"
+    ],
+    [
+      "So. San Francisco",
+      "23:41"
+    ],
+    [
+      "Bayshore",
+      "23:47"
+    ],
+    [
+      "22nd Street",
+      "23:52"
+    ],
+    [
+      "San Francisco",
+      "12:01"
+    ]
+  ],
+  "198": [
+    [
+      "San Francisco",
+      "12:01"
+    ],
+    [
+      "22nd Street",
+      "12:06"
+    ],
+    [
+      "Bayshore",
+      "12:11"
+    ],
+    [
+      "So. San Francisco",
+      "12:17"
+    ],
+    [
+      "San Bruno",
+      "12:21"
+    ],
+    [
+      "Millbrae",
+      "12:25"
+    ],
+    [
+      "Burlingame",
+      "12:29"
+    ],
+    [
+      "San Mateo",
+      "12:32"
+    ],
+    [
+      "Hayward Park",
+      "12:35"
+    ],
+    [
+      "Hillsdale",
+      "12:38"
+    ],
+    [
+      "Belmont",
+      "12:41"
+    ],
+    [
+      "San Carlos",
+      "12:44"
+    ],
+    [
+      "Redwood City",
+      "12:49"
+    ],
+    [
+      "Menlo Park",
+      "12:54"
+    ],
+    [
+      "Palo Alto",
+      "12:57"
+    ],
+    [
+      "California Ave",
+      "1:01"
+    ],
+    [
+      "San Antonio",
+      "1:05"
+    ],
+    [
+      "Mountain View",
+      "1:09"
+    ],
+    [
+      "Sunnyvale",
+      "1:14"
+    ],
+    [
+      "Lawrence",
+      "1:18"
+    ],
+    [
+      "Santa Clara",
+      "1:23"
+    ],
+    [
+      "San Jose",
+      "1:32"
+    ]
+  ],
+  "276": [
+    [
+      "San Francisco",
+      "17:27"
+    ],
+    [
+      "22nd Street",
+      "17:32"
+    ],
+    [
+      "Bayshore",
+      "17:40"
+    ],
+    [
+      "So. San Francisco",
+      "17:48"
+    ],
+    [
+      "San Bruno",
+      "17:52"
+    ],
+    [
+      "Millbrae",
+      "17:56"
+    ],
+    [
+      "Burlingame",
+      "18:00"
+    ],
+    [
+      "San Mateo",
+      "18:04"
+    ],
+    [
+      "Hayward Park",
+      "18:07"
+    ],
+    [
+      "Hillsdale",
+      "18:11"
+    ],
+    [
+      "Belmont",
+      "18:14"
+    ],
+    [
+      "San Carlos",
+      "18:18"
+    ],
+    [
+      "Redwood City",
+      "18:22"
+    ],
+    [
+      "Menlo Park",
+      "18:28"
+    ],
+    [
+      "Mountain View",
+      "18:36"
+    ],
+    [
+      "Lawrence",
+      "18:43"
+    ],
+    [
+      "Santa Clara",
+      "18:48"
+    ],
+    [
+      "San Jose",
+      "18:56"
+    ],
+    [
+      "Tamien",
+      "19:02"
+    ],
+    [
+      "Capitol",
+      "19:09"
+    ],
+    [
+      "Blossom Hill",
+      "19:15"
+    ],
+    [
+      "Morgan Hill",
+      "19:28"
+    ],
+    [
+      "San Martin",
+      "19:34"
+    ],
+    [
+      "Gilroy",
+      "19:47"
+    ]
+  ],
+  "312": [
+    [
+      "San Francisco",
+      "6:59"
+    ],
+    [
+      "22nd Street",
+      "7:04"
+    ],
+    [
+      "Millbrae",
+      "7:17"
+    ],
+    [
+      "Redwood City",
+      "7:30"
+    ],
+    [
+      "Menlo Park",
+      "7:35"
+    ],
+    [
+      "Mountain View",
+      "7:44"
+    ],
+    [
+      "San Jose",
+      "7:58"
+    ]
+  ],
+  "135": [
+    [
+      "San Jose",
+      "9:10"
+    ],
+    [
+      "Santa Clara",
+      "9:15"
+    ],
+    [
+      "Lawrence",
+      "9:20"
+    ],
+    [
+      "Sunnyvale",
+      "9:24"
+    ],
+    [
+      "Mountain View",
+      "9:29"
+    ],
+    [
+      "San Antonio",
+      "9:33"
+    ],
+    [
+      "California Ave",
+      "9:37"
+    ],
+    [
+      "Palo Alto",
+      "9:41"
+    ],
+    [
+      "Menlo Park",
+      "9:44"
+    ],
+    [
+      "Redwood City",
+      "9:49"
+    ],
+    [
+      "San Carlos",
+      "9:53"
+    ],
+    [
+      "Belmont",
+      "9:56"
+    ],
+    [
+      "Hillsdale",
+      "9:59"
+    ],
+    [
+      "Hayward Park",
+      "10:02"
+    ],
+    [
+      "San Mateo",
+      "10:05"
+    ],
+    [
+      "Burlingame",
+      "10:08"
+    ],
+    [
+      "Millbrae",
+      "10:13"
+    ],
+    [
+      "San Bruno",
+      "10:17"
+    ],
+    [
+      "So. San Francisco",
+      "10:21"
+    ],
+    [
+      "Bayshore",
+      "10:27"
+    ],
+    [
+      "22nd Street",
+      "10:32"
+    ],
+    [
+      "San Francisco",
+      "10:41"
+    ]
+  ],
+  "256": [
+    [
+      "San Francisco",
+      "14:37"
+    ],
+    [
+      "San Bruno",
+      "14:51"
+    ],
+    [
+      "Millbrae",
+      "14:55"
+    ],
+    [
+      "Burlingame",
+      "14:59"
+    ],
+    [
+      "San Mateo",
+      "15:02"
+    ],
+    [
+      "Hillsdale",
+      "15:06"
+    ],
+    [
+      "Belmont",
+      "15:09"
+    ],
+    [
+      "San Carlos",
+      "15:12"
+    ],
+    [
+      "Redwood City",
+      "15:17"
+    ],
+    [
+      "Menlo Park",
+      "15:22"
+    ],
+    [
+      "Palo Alto",
+      "15:25"
+    ],
+    [
+      "California Ave",
+      "15:29"
+    ],
+    [
+      "San Antonio",
+      "15:33"
+    ],
+    [
+      "Mountain View",
+      "15:37"
+    ],
+    [
+      "Sunnyvale",
+      "15:42"
+    ],
+    [
+      "Lawrence",
+      "15:46"
+    ],
+    [
+      "Santa Clara",
+      "15:51"
+    ],
+    [
+      "San Jose",
+      "16:00"
+    ],
+    [
+      "Tamien",
+      "16:07"
+    ]
+  ],
+  "313": [
+    [
+      "San Jose",
+      "6:45"
+    ],
+    [
+      "Mountain View",
+      "6:57"
+    ],
+    [
+      "Palo Alto",
+      "7:05"
+    ],
+    [
+      "Hillsdale",
+      "7:16"
+    ],
+    [
+      "Millbrae",
+      "7:24"
+    ],
+    [
+      "San Francisco",
+      "7:42"
+    ]
+  ],
+  "277": [
+    [
+      "Tamien",
+      "17:32"
+    ],
+    [
+      "San Jose",
+      "17:39"
+    ],
+    [
+      "Santa Clara",
+      "17:44"
+    ],
+    [
+      "Lawrence",
+      "17:52"
+    ],
+    [
+      "Sunnyvale",
+      "17:58"
+    ],
+    [
+      "Mountain View",
+      "18:03"
+    ],
+    [
+      "San Antonio",
+      "18:07"
+    ],
+    [
+      "California Ave",
+      "18:11"
+    ],
+    [
+      "Palo Alto",
+      "18:16"
+    ],
+    [
+      "Menlo Park",
+      "18:19"
+    ],
+    [
+      "Redwood City",
+      "18:25"
+    ],
+    [
+      "San Carlos",
+      "18:29"
+    ],
+    [
+      "San Mateo",
+      "18:36"
+    ],
+    [
+      "Millbrae",
+      "18:43"
+    ],
+    [
+      "22nd Street",
+      "18:55"
+    ],
+    [
+      "San Francisco",
+      "19:02"
+    ]
+  ],
+  "158": [
+    [
+      "San Francisco",
+      "15:07"
+    ],
+    [
+      "22nd Street",
+      "15:12"
+    ],
+    [
+      "Bayshore",
+      "15:17"
+    ],
+    [
+      "So. San Francisco",
+      "15:23"
+    ],
+    [
+      "San Bruno",
+      "15:27"
+    ],
+    [
+      "Millbrae",
+      "15:31"
+    ],
+    [
+      "Burlingame",
+      "15:35"
+    ],
+    [
+      "San Mateo",
+      "15:38"
+    ],
+    [
+      "Hayward Park",
+      "15:41"
+    ],
+    [
+      "Hillsdale",
+      "15:44"
+    ],
+    [
+      "Belmont",
+      "15:47"
+    ],
+    [
+      "San Carlos",
+      "15:50"
+    ],
+    [
+      "Redwood City",
+      "15:55"
+    ],
+    [
+      "Menlo Park",
+      "16:00"
+    ],
+    [
+      "Palo Alto",
+      "16:03"
+    ],
+    [
+      "California Ave",
+      "16:07"
+    ],
+    [
+      "San Antonio",
+      "16:11"
+    ],
+    [
+      "Mountain View",
+      "16:15"
+    ],
+    [
+      "Sunnyvale",
+      "16:20"
+    ],
+    [
+      "Lawrence",
+      "16:24"
+    ],
+    [
+      "Santa Clara",
+      "16:29"
+    ],
+    [
+      "College Park",
+      "16:32"
+    ],
+    [
+      "San Jose",
+      "16:39"
+    ],
+    [
+      "Tamien",
+      "16:45"
+    ],
+    [
+      "Capitol",
+      "16:52"
+    ],
+    [
+      "Blossom Hill",
+      "16:58"
+    ],
+    [
+      "Morgan Hill",
+      "17:11"
+    ],
+    [
+      "San Martin",
+      "17:17"
+    ],
+    [
+      "Gilroy",
+      "17:30"
+    ]
+  ],
+  "236": [
+    [
+      "San Francisco",
+      "9:37"
+    ],
+    [
+      "San Bruno",
+      "9:51"
+    ],
+    [
+      "Millbrae",
+      "9:55"
+    ],
+    [
+      "Burlingame",
+      "9:59"
+    ],
+    [
+      "San Mateo",
+      "10:02"
+    ],
+    [
+      "Hillsdale",
+      "10:06"
+    ],
+    [
+      "Belmont",
+      "10:09"
+    ],
+    [
+      "San Carlos",
+      "10:12"
+    ],
+    [
+      "Redwood City",
+      "10:17"
+    ],
+    [
+      "Menlo Park",
+      "10:22"
+    ],
+    [
+      "Palo Alto",
+      "10:25"
+    ],
+    [
+      "California Ave",
+      "10:29"
+    ],
+    [
+      "San Antonio",
+      "10:33"
+    ],
+    [
+      "Mountain View",
+      "10:37"
+    ],
+    [
+      "Sunnyvale",
+      "10:42"
+    ],
+    [
+      "Lawrence",
+      "10:46"
+    ],
+    [
+      "Santa Clara",
+      "10:51"
+    ],
+    [
+      "San Jose",
+      "11:00"
+    ],
+    [
+      "Tamien",
+      "11:07"
+    ]
+  ],
+  "257": [
+    [
+      "Tamien",
+      "14:33"
+    ],
+    [
+      "San Jose",
+      "14:40"
+    ],
+    [
+      "Santa Clara",
+      "14:45"
+    ],
+    [
+      "Lawrence",
+      "14:50"
+    ],
+    [
+      "Sunnyvale",
+      "14:54"
+    ],
+    [
+      "Mountain View",
+      "14:59"
+    ],
+    [
+      "San Antonio",
+      "15:03"
+    ],
+    [
+      "California Ave",
+      "15:07"
+    ],
+    [
+      "Palo Alto",
+      "15:11"
+    ],
+    [
+      "Menlo Park",
+      "15:14"
+    ],
+    [
+      "Redwood City",
+      "15:19"
+    ],
+    [
+      "San Carlos",
+      "15:23"
+    ],
+    [
+      "Belmont",
+      "15:26"
+    ],
+    [
+      "Hillsdale",
+      "15:29"
+    ],
+    [
+      "San Mateo",
+      "15:33"
+    ],
+    [
+      "Burlingame",
+      "15:36"
+    ],
+    [
+      "Millbrae",
+      "15:41"
+    ],
+    [
+      "San Bruno",
+      "15:45"
+    ],
+    [
+      "San Francisco",
+      "16:02"
+    ]
+  ],
+  "215": [
+    [
+      "San Jose",
+      "6:50"
+    ],
+    [
+      "Sunnyvale",
+      "7:00"
+    ],
+    [
+      "Mountain View",
+      "7:05"
+    ],
+    [
+      "California Ave",
+      "7:11"
+    ],
+    [
+      "Palo Alto",
+      "7:16"
+    ],
+    [
+      "San Carlos",
+      "7:24"
+    ],
+    [
+      "Hillsdale",
+      "7:28"
+    ],
+    [
+      "San Mateo",
+      "7:32"
+    ],
+    [
+      "Burlingame",
+      "7:35"
+    ],
+    [
+      "San Bruno",
+      "7:42"
+    ],
+    [
+      "San Francisco",
+      "7:57"
+    ]
+  ],
+  "314": [
+    [
+      "San Francisco",
+      "7:14"
+    ],
+    [
+      "22nd Street",
+      "7:19"
+    ],
+    [
+      "Millbrae",
+      "7:32"
+    ],
+    [
+      "Hillsdale",
+      "7:40"
+    ],
+    [
+      "Palo Alto",
+      "7:51"
+    ],
+    [
+      "Mountain View",
+      "7:58"
+    ],
+    [
+      "San Jose",
+      "8:13"
+    ]
+  ],
+  "280": [
+    [
+      "San Francisco",
+      "17:56"
+    ],
+    [
+      "So. San Francisco",
+      "18:08"
+    ],
+    [
+      "Millbrae",
+      "18:14"
+    ],
+    [
+      "Hillsdale",
+      "18:22"
+    ],
+    [
+      "Redwood City",
+      "18:28"
+    ],
+    [
+      "Menlo Park",
+      "18:34"
+    ],
+    [
+      "Palo Alto",
+      "18:38"
+    ],
+    [
+      "California Ave",
+      "18:42"
+    ],
+    [
+      "San Antonio",
+      "18:46"
+    ],
+    [
+      "Mountain View",
+      "18:50"
+    ],
+    [
+      "Sunnyvale",
+      "18:55"
+    ],
+    [
+      "Lawrence",
+      "19:01"
+    ],
+    [
+      "Santa Clara",
+      "19:08"
+    ],
+    [
+      "San Jose",
+      "19:16"
+    ],
+    [
+      "Tamien",
+      "19:23"
+    ]
+  ],
+  "378": [
+    [
+      "San Francisco",
+      "17:33"
+    ],
+    [
+      "Millbrae",
+      "17:49"
+    ],
+    [
+      "San Mateo",
+      "17:57"
+    ],
+    [
+      "Redwood City",
+      "18:06"
+    ],
+    [
+      "Palo Alto",
+      "18:12"
+    ],
+    [
+      "Sunnyvale",
+      "18:21"
+    ],
+    [
+      "San Jose",
+      "18:32"
+    ],
+    [
+      "Tamien",
+      "18:39"
+    ]
+  ],
+  "159": [
+    [
+      "San Jose",
+      "15:05"
+    ],
+    [
+      "College Park",
+      "15:08"
+    ],
+    [
+      "Santa Clara",
+      "15:12"
+    ],
+    [
+      "Lawrence",
+      "15:17"
+    ],
+    [
+      "Sunnyvale",
+      "15:21"
+    ],
+    [
+      "Mountain View",
+      "15:26"
+    ],
+    [
+      "San Antonio",
+      "15:30"
+    ],
+    [
+      "California Ave",
+      "15:34"
+    ],
+    [
+      "Palo Alto",
+      "15:38"
+    ],
+    [
+      "Menlo Park",
+      "15:41"
+    ],
+    [
+      "Redwood City",
+      "15:46"
+    ],
+    [
+      "San Carlos",
+      "15:50"
+    ],
+    [
+      "Belmont",
+      "15:53"
+    ],
+    [
+      "Hillsdale",
+      "15:56"
+    ],
+    [
+      "Hayward Park",
+      "15:59"
+    ],
+    [
+      "San Mateo",
+      "16:02"
+    ],
+    [
+      "Burlingame",
+      "16:05"
+    ],
+    [
+      "Millbrae",
+      "16:10"
+    ],
+    [
+      "San Bruno",
+      "16:14"
+    ],
+    [
+      "So. San Francisco",
+      "16:18"
+    ],
+    [
+      "Bayshore",
+      "16:24"
+    ],
+    [
+      "22nd Street",
+      "16:29"
+    ],
+    [
+      "San Francisco",
+      "16:38"
+    ]
+  ],
+  "216": [
+    [
+      "San Francisco",
+      "7:19"
+    ],
+    [
+      "San Bruno",
+      "7:33"
+    ],
+    [
+      "Burlingame",
+      "7:38"
+    ],
+    [
+      "San Mateo",
+      "7:42"
+    ],
+    [
+      "Hillsdale",
+      "7:46"
+    ],
+    [
+      "San Carlos",
+      "7:50"
+    ],
+    [
+      "Menlo Park",
+      "7:58"
+    ],
+    [
+      "Palo Alto",
+      "8:01"
+    ],
+    [
+      "Mountain View",
+      "8:09"
+    ],
+    [
+      "Lawrence",
+      "8:16"
+    ],
+    [
+      "San Jose",
+      "8:28"
+    ]
+  ],
+  "237": [
+    [
+      "Tamien",
+      "9:33"
+    ],
+    [
+      "San Jose",
+      "9:40"
+    ],
+    [
+      "Santa Clara",
+      "9:45"
+    ],
+    [
+      "Lawrence",
+      "9:50"
+    ],
+    [
+      "Sunnyvale",
+      "9:54"
+    ],
+    [
+      "Mountain View",
+      "9:59"
+    ],
+    [
+      "San Antonio",
+      "10:03"
+    ],
+    [
+      "California Ave",
+      "10:07"
+    ],
+    [
+      "Palo Alto",
+      "10:11"
+    ],
+    [
+      "Menlo Park",
+      "10:14"
+    ],
+    [
+      "Redwood City",
+      "10:19"
+    ],
+    [
+      "San Carlos",
+      "10:23"
+    ],
+    [
+      "Belmont",
+      "10:26"
+    ],
+    [
+      "Hillsdale",
+      "10:29"
+    ],
+    [
+      "San Mateo",
+      "10:33"
+    ],
+    [
+      "Burlingame",
+      "10:36"
+    ],
+    [
+      "Millbrae",
+      "10:41"
+    ],
+    [
+      "San Bruno",
+      "10:45"
+    ],
+    [
+      "San Francisco",
+      "11:02"
+    ]
+  ],
+  "138": [
+    [
+      "San Francisco",
+      "10:07"
+    ],
+    [
+      "22nd Street",
+      "10:12"
+    ],
+    [
+      "Bayshore",
+      "10:17"
+    ],
+    [
+      "So. San Francisco",
+      "10:23"
+    ],
+    [
+      "San Bruno",
+      "10:27"
+    ],
+    [
+      "Millbrae",
+      "10:31"
+    ],
+    [
+      "Burlingame",
+      "10:35"
+    ],
+    [
+      "San Mateo",
+      "10:38"
+    ],
+    [
+      "Hayward Park",
+      "10:41"
+    ],
+    [
+      "Hillsdale",
+      "10:44"
+    ],
+    [
+      "Belmont",
+      "10:47"
+    ],
+    [
+      "San Carlos",
+      "10:50"
+    ],
+    [
+      "Redwood City",
+      "10:55"
+    ],
+    [
+      "Menlo Park",
+      "11:00"
+    ],
+    [
+      "Palo Alto",
+      "11:03"
+    ],
+    [
+      "California Ave",
+      "11:07"
+    ],
+    [
+      "San Antonio",
+      "11:11"
+    ],
+    [
+      "Mountain View",
+      "11:15"
+    ],
+    [
+      "Sunnyvale",
+      "11:20"
+    ],
+    [
+      "Lawrence",
+      "11:24"
+    ],
+    [
+      "Santa Clara",
+      "11:29"
+    ],
+    [
+      "San Jose",
+      "11:38"
+    ]
+  ],
+  "260": [
+    [
+      "San Francisco",
+      "15:37"
+    ],
+    [
+      "San Bruno",
+      "15:51"
+    ],
+    [
+      "Millbrae",
+      "15:55"
+    ],
+    [
+      "Burlingame",
+      "15:59"
+    ],
+    [
+      "San Mateo",
+      "16:02"
+    ],
+    [
+      "Hillsdale",
+      "16:06"
+    ],
+    [
+      "Belmont",
+      "16:09"
+    ],
+    [
+      "San Carlos",
+      "16:12"
+    ],
+    [
+      "Redwood City",
+      "16:17"
+    ],
+    [
+      "Menlo Park",
+      "16:22"
+    ],
+    [
+      "Palo Alto",
+      "16:25"
+    ],
+    [
+      "California Ave",
+      "16:29"
+    ],
+    [
+      "San Antonio",
+      "16:33"
+    ],
+    [
+      "Mountain View",
+      "16:37"
+    ],
+    [
+      "Sunnyvale",
+      "16:42"
+    ],
+    [
+      "Lawrence",
+      "16:46"
+    ],
+    [
+      "Santa Clara",
+      "16:51"
+    ],
+    [
+      "San Jose",
+      "17:00"
+    ],
+    [
+      "Tamien",
+      "17:07"
+    ]
+  ],
+  "379": [
+    [
+      "San Jose",
+      "17:45"
+    ],
+    [
+      "Mountain View",
+      "17:58"
+    ],
+    [
+      "Palo Alto",
+      "18:06"
+    ],
+    [
+      "Hillsdale",
+      "18:17"
+    ],
+    [
+      "Millbrae",
+      "18:25"
+    ],
+    [
+      "22nd Street",
+      "18:37"
+    ],
+    [
+      "San Francisco",
+      "18:44"
+    ]
+  ],
+  "217": [
+    [
+      "Gilroy",
+      "6:07"
+    ],
+    [
+      "San Martin",
+      "6:16"
+    ],
+    [
+      "Morgan Hill",
+      "6:22"
+    ],
+    [
+      "Blossom Hill",
+      "6:35"
+    ],
+    [
+      "Capitol",
+      "6:41"
+    ],
+    [
+      "Tamien",
+      "6:49"
+    ],
+    [
+      "San Jose",
+      "6:57"
+    ],
+    [
+      "Santa Clara",
+      "7:02"
+    ],
+    [
+      "Lawrence",
+      "7:12"
+    ],
+    [
+      "Sunnyvale",
+      "7:18"
+    ],
+    [
+      "Mountain View",
+      "7:23"
+    ],
+    [
+      "San Antonio",
+      "7:27"
+    ],
+    [
+      "California Ave",
+      "7:31"
+    ],
+    [
+      "Palo Alto",
+      "7:36"
+    ],
+    [
+      "Menlo Park",
+      "7:39"
+    ],
+    [
+      "Redwood City",
+      "7:45"
+    ],
+    [
+      "Hillsdale",
+      "7:51"
+    ],
+    [
+      "Millbrae",
+      "7:59"
+    ],
+    [
+      "So. San Francisco",
+      "8:05"
+    ],
+    [
+      "San Francisco",
+      "8:19"
+    ]
+  ],
+  "139": [
+    [
+      "San Jose",
+      "10:10"
+    ],
+    [
+      "Santa Clara",
+      "10:15"
+    ],
+    [
+      "Lawrence",
+      "10:20"
+    ],
+    [
+      "Sunnyvale",
+      "10:24"
+    ],
+    [
+      "Mountain View",
+      "10:29"
+    ],
+    [
+      "San Antonio",
+      "10:33"
+    ],
+    [
+      "California Ave",
+      "10:37"
+    ],
+    [
+      "Palo Alto",
+      "10:41"
+    ],
+    [
+      "Menlo Park",
+      "10:44"
+    ],
+    [
+      "Redwood City",
+      "10:49"
+    ],
+    [
+      "San Carlos",
+      "10:53"
+    ],
+    [
+      "Belmont",
+      "10:56"
+    ],
+    [
+      "Hillsdale",
+      "10:59"
+    ],
+    [
+      "Hayward Park",
+      "11:02"
+    ],
+    [
+      "San Mateo",
+      "11:05"
+    ],
+    [
+      "Burlingame",
+      "11:08"
+    ],
+    [
+      "Millbrae",
+      "11:13"
+    ],
+    [
+      "San Bruno",
+      "11:17"
+    ],
+    [
+      "So. San Francisco",
+      "11:21"
+    ],
+    [
+      "Bayshore",
+      "11:27"
+    ],
+    [
+      "22nd Street",
+      "11:32"
+    ],
+    [
+      "San Francisco",
+      "11:41"
+    ]
+  ],
+  "281": [
+    [
+      "Tamien",
+      "17:58"
+    ],
+    [
+      "San Jose",
+      "18:05"
+    ],
+    [
+      "Santa Clara",
+      "18:10"
+    ],
+    [
+      "Palo Alto",
+      "18:24"
+    ],
+    [
+      "Redwood City",
+      "18:31"
+    ],
+    [
+      "San Carlos",
+      "18:35"
+    ],
+    [
+      "Belmont",
+      "18:38"
+    ],
+    [
+      "Hillsdale",
+      "18:42"
+    ],
+    [
+      "Hayward Park",
+      "18:45"
+    ],
+    [
+      "San Mateo",
+      "18:48"
+    ],
+    [
+      "Burlingame",
+      "18:51"
+    ],
+    [
+      "Millbrae",
+      "18:57"
+    ],
+    [
+      "San Bruno",
+      "19:01"
+    ],
+    [
+      "So. San Francisco",
+      "19:05"
+    ],
+    [
+      "Bayshore",
+      "19:13"
+    ],
+    [
+      "22nd Street",
+      "19:21"
+    ],
+    [
+      "San Francisco",
+      "19:29"
+    ]
+  ],
+  "218": [
+    [
+      "San Francisco",
+      "7:24"
+    ],
+    [
+      "22nd Street",
+      "7:29"
+    ],
+    [
+      "Bayshore",
+      "7:34"
+    ],
+    [
+      "So. San Francisco",
+      "7:40"
+    ],
+    [
+      "San Bruno",
+      "7:44"
+    ],
+    [
+      "Millbrae",
+      "7:48"
+    ],
+    [
+      "Burlingame",
+      "7:52"
+    ],
+    [
+      "San Mateo",
+      "7:55"
+    ],
+    [
+      "Hayward Park",
+      "7:58"
+    ],
+    [
+      "Hillsdale",
+      "8:01"
+    ],
+    [
+      "Belmont",
+      "8:04"
+    ],
+    [
+      "San Carlos",
+      "8:07"
+    ],
+    [
+      "Redwood City",
+      "8:12"
+    ],
+    [
+      "Palo Alto",
+      "8:18"
+    ],
+    [
+      "Santa Clara",
+      "8:34"
+    ],
+    [
+      "San Jose",
+      "8:43"
+    ],
+    [
+      "Tamien",
+      "8:50"
+    ]
+  ],
+  "261": [
+    [
+      "Tamien",
+      "15:37"
+    ],
+    [
+      "San Jose",
+      "15:44"
+    ],
+    [
+      "Santa Clara",
+      "15:49"
+    ],
+    [
+      "Lawrence",
+      "15:54"
+    ],
+    [
+      "Sunnyvale",
+      "15:58"
+    ],
+    [
+      "Mountain View",
+      "16:03"
+    ],
+    [
+      "San Antonio",
+      "16:07"
+    ],
+    [
+      "California Ave",
+      "16:11"
+    ],
+    [
+      "Palo Alto",
+      "16:16"
+    ],
+    [
+      "Menlo Park",
+      "16:19"
+    ],
+    [
+      "Redwood City",
+      "16:25"
+    ],
+    [
+      "San Carlos",
+      "16:29"
+    ],
+    [
+      "San Mateo",
+      "16:36"
+    ],
+    [
+      "Millbrae",
+      "16:43"
+    ],
+    [
+      "22nd Street",
+      "16:55"
+    ],
+    [
+      "San Francisco",
+      "17:03"
+    ]
+  ],
+  "382": [
+    [
+      "San Francisco",
+      "18:14"
+    ],
+    [
+      "Millbrae",
+      "18:30"
+    ],
+    [
+      "Hillsdale",
+      "18:38"
+    ],
+    [
+      "Palo Alto",
+      "18:49"
+    ],
+    [
+      "Mountain View",
+      "18:56"
+    ],
+    [
+      "San Jose",
+      "19:11"
+    ]
+  ],
+  "220": [
+    [
+      "San Francisco",
+      "7:44"
+    ],
+    [
+      "22nd Street",
+      "7:49"
+    ],
+    [
+      "Millbrae",
+      "8:01"
+    ],
+    [
+      "San Mateo",
+      "8:07"
+    ],
+    [
+      "San Carlos",
+      "8:13"
+    ],
+    [
+      "Redwood City",
+      "8:18"
+    ],
+    [
+      "Menlo Park",
+      "8:23"
+    ],
+    [
+      "Palo Alto",
+      "8:26"
+    ],
+    [
+      "California Ave",
+      "8:30"
+    ],
+    [
+      "San Antonio",
+      "8:34"
+    ],
+    [
+      "Mountain View",
+      "8:38"
+    ],
+    [
+      "Sunnyvale",
+      "8:43"
+    ],
+    [
+      "Lawrence",
+      "8:49*"
+    ],
+    [
+      "Santa Clara",
+      "8:56*"
+    ],
+    [
+      "San Jose",
+      "9:05"
+    ],
+    [
+      "Tamien",
+      "9:12"
+    ]
+  ],
+  "142": [
+    [
+      "San Francisco",
+      "11:07"
+    ],
+    [
+      "22nd Street",
+      "11:12"
+    ],
+    [
+      "Bayshore",
+      "11:17"
+    ],
+    [
+      "So. San Francisco",
+      "11:23"
+    ],
+    [
+      "San Bruno",
+      "11:27"
+    ],
+    [
+      "Millbrae",
+      "11:31"
+    ],
+    [
+      "Burlingame",
+      "11:35"
+    ],
+    [
+      "San Mateo",
+      "11:38"
+    ],
+    [
+      "Hayward Park",
+      "11:41"
+    ],
+    [
+      "Hillsdale",
+      "11:44"
+    ],
+    [
+      "Belmont",
+      "11:47"
+    ],
+    [
+      "San Carlos",
+      "11:50"
+    ],
+    [
+      "Redwood City",
+      "11:55"
+    ],
+    [
+      "Menlo Park",
+      "12:00"
+    ],
+    [
+      "Palo Alto",
+      "12:03"
+    ],
+    [
+      "California Ave",
+      "12:07"
+    ],
+    [
+      "San Antonio",
+      "12:11"
+    ],
+    [
+      "Mountain View",
+      "12:15"
+    ],
+    [
+      "Sunnyvale",
+      "12:20"
+    ],
+    [
+      "Lawrence",
+      "12:24"
+    ],
+    [
+      "Santa Clara",
+      "12:29"
+    ],
+    [
+      "San Jose",
+      "12:38"
+    ]
+  ],
+  "284": [
+    [
+      "San Francisco",
+      "18:27"
+    ],
+    [
+      "22nd Street",
+      "18:32"
+    ],
+    [
+      "Bayshore",
+      "18:40"
+    ],
+    [
+      "So. San Francisco",
+      "18:48"
+    ],
+    [
+      "San Bruno",
+      "18:52"
+    ],
+    [
+      "Millbrae",
+      "18:56"
+    ],
+    [
+      "Burlingame",
+      "19:00"
+    ],
+    [
+      "San Mateo",
+      "19:04"
+    ],
+    [
+      "Hayward Park",
+      "19:07"
+    ],
+    [
+      "Hillsdale",
+      "19:11"
+    ],
+    [
+      "Belmont",
+      "19:14"
+    ],
+    [
+      "San Carlos",
+      "19:18"
+    ],
+    [
+      "Redwood City",
+      "19:22"
+    ],
+    [
+      "Menlo Park",
+      "19:28"
+    ],
+    [
+      "Mountain View",
+      "19:36"
+    ],
+    [
+      "Santa Clara",
+      "19:47"
+    ],
+    [
+      "San Jose",
+      "19:55"
+    ]
+  ],
+  "362": [
+    [
+      "San Francisco",
+      "16:09"
+    ],
+    [
+      "Millbrae",
+      "16:25"
+    ],
+    [
+      "Hillsdale",
+      "16:33"
+    ],
+    [
+      "Palo Alto",
+      "16:44"
+    ],
+    [
+      "Mountain View",
+      "16:51"
+    ],
+    [
+      "San Jose",
+      "17:06"
+    ]
+  ],
+  "101": [
+    [
+      "San Jose",
+      "4:30"
+    ],
+    [
+      "Santa Clara",
+      "4:35"
+    ],
+    [
+      "Lawrence",
+      "4:40"
+    ],
+    [
+      "Sunnyvale",
+      "4:44"
+    ],
+    [
+      "Mountain View",
+      "4:49"
+    ],
+    [
+      "San Antonio",
+      "4:53"
+    ],
+    [
+      "California Ave",
+      "4:57"
+    ],
+    [
+      "Palo Alto",
+      "5:01"
+    ],
+    [
+      "Menlo Park",
+      "5:04"
+    ],
+    [
+      "Redwood City",
+      "5:09"
+    ],
+    [
+      "San Carlos",
+      "5:13"
+    ],
+    [
+      "Belmont",
+      "5:16"
+    ],
+    [
+      "Hillsdale",
+      "5:19"
+    ],
+    [
+      "Hayward Park",
+      "5:22"
+    ],
+    [
+      "San Mateo",
+      "5:25"
+    ],
+    [
+      "Burlingame",
+      "5:28"
+    ],
+    [
+      "Millbrae",
+      "5:33"
+    ],
+    [
+      "San Bruno",
+      "5:37"
+    ],
+    [
+      "So. San Francisco",
+      "5:41"
+    ],
+    [
+      "Bayshore",
+      "5:47"
+    ],
+    [
+      "22nd Street",
+      "5:52"
+    ],
+    [
+      "San Francisco",
+      "6:01"
+    ]
+  ],
+  "221": [
+    [
+      "Gilroy",
+      "6:30"
+    ],
+    [
+      "San Martin",
+      "6:39"
+    ],
+    [
+      "Morgan Hill",
+      "6:45"
+    ],
+    [
+      "Blossom Hill",
+      "6:58"
+    ],
+    [
+      "Capitol",
+      "7:04"
+    ],
+    [
+      "Tamien",
+      "7:12"
+    ],
+    [
+      "San Jose",
+      "7:20"
+    ],
+    [
+      "Santa Clara",
+      "7:25"
+    ],
+    [
+      "Lawrence",
+      "7:30"
+    ],
+    [
+      "Mountain View",
+      "7:37"
+    ],
+    [
+      "Menlo Park",
+      "7:45"
+    ],
+    [
+      "Redwood City",
+      "7:51"
+    ],
+    [
+      "San Carlos",
+      "7:55"
+    ],
+    [
+      "Belmont",
+      "7:58"
+    ],
+    [
+      "Hillsdale",
+      "8:02"
+    ],
+    [
+      "Hayward Park",
+      "8:05"
+    ],
+    [
+      "San Mateo",
+      "8:08"
+    ],
+    [
+      "Burlingame",
+      "8:11"
+    ],
+    [
+      "Millbrae",
+      "8:17"
+    ],
+    [
+      "San Bruno",
+      "8:21"
+    ],
+    [
+      "So. San Francisco",
+      "8:25"
+    ],
+    [
+      "Bayshore",
+      "8:33*"
+    ],
+    [
+      "22nd Street",
+      "8:40*"
+    ],
+    [
+      "San Francisco",
+      "8:48"
+    ]
+  ],
+  "319": [
+    [
+      "Tamien",
+      "6:56"
+    ],
+    [
+      "San Jose",
+      "7:03"
+    ],
+    [
+      "Sunnyvale",
+      "7:13"
+    ],
+    [
+      "Palo Alto",
+      "7:23"
+    ],
+    [
+      "Redwood City",
+      "7:30"
+    ],
+    [
+      "San Mateo",
+      "7:39"
+    ],
+    [
+      "Millbrae",
+      "7:45"
+    ],
+    [
+      "San Francisco",
+      "8:02"
+    ]
+  ],
+  "143": [
+    [
+      "San Jose",
+      "11:10"
+    ],
+    [
+      "Santa Clara",
+      "11:15"
+    ],
+    [
+      "Lawrence",
+      "11:20"
+    ],
+    [
+      "Sunnyvale",
+      "11:24"
+    ],
+    [
+      "Mountain View",
+      "11:29"
+    ],
+    [
+      "San Antonio",
+      "11:33"
+    ],
+    [
+      "California Ave",
+      "11:37"
+    ],
+    [
+      "Palo Alto",
+      "11:41"
+    ],
+    [
+      "Menlo Park",
+      "11:44"
+    ],
+    [
+      "Redwood City",
+      "11:49"
+    ],
+    [
+      "San Carlos",
+      "11:53"
+    ],
+    [
+      "Belmont",
+      "11:56"
+    ],
+    [
+      "Hillsdale",
+      "11:59"
+    ],
+    [
+      "Hayward Park",
+      "12:02"
+    ],
+    [
+      "San Mateo",
+      "12:05"
+    ],
+    [
+      "Burlingame",
+      "12:08"
+    ],
+    [
+      "Millbrae",
+      "12:13"
+    ],
+    [
+      "San Bruno",
+      "12:17"
+    ],
+    [
+      "So. San Francisco",
+      "12:21"
+    ],
+    [
+      "Bayshore",
+      "12:27"
+    ],
+    [
+      "22nd Street",
+      "12:32"
+    ],
+    [
+      "San Francisco",
+      "12:41"
+    ]
+  ],
+  "263": [
+    [
+      "Tamien",
+      "15:58"
+    ],
+    [
+      "San Jose",
+      "16:05"
+    ],
+    [
+      "Santa Clara",
+      "16:10"
+    ],
+    [
+      "Palo Alto",
+      "16:24"
+    ],
+    [
+      "Redwood City",
+      "16:31"
+    ],
+    [
+      "San Carlos",
+      "16:35"
+    ],
+    [
+      "Belmont",
+      "16:38"
+    ],
+    [
+      "Hillsdale",
+      "16:42"
+    ],
+    [
+      "Hayward Park",
+      "16:45"
+    ],
+    [
+      "San Mateo",
+      "16:48"
+    ],
+    [
+      "Burlingame",
+      "16:51"
+    ],
+    [
+      "Millbrae",
+      "16:57"
+    ],
+    [
+      "San Bruno",
+      "17:01"
+    ],
+    [
+      "So. San Francisco",
+      "17:05"
+    ],
+    [
+      "Bayshore",
+      "17:13"
+    ],
+    [
+      "22nd Street",
+      "17:21"
+    ],
+    [
+      "San Francisco",
+      "17:29"
+    ]
+  ],
+  "383": [
+    [
+      "San Jose",
+      "18:25"
+    ],
+    [
+      "Mountain View",
+      "18:37"
+    ],
+    [
+      "Menlo Park",
+      "18:46"
+    ],
+    [
+      "Redwood City",
+      "18:52"
+    ],
+    [
+      "Millbrae",
+      "19:05"
+    ],
+    [
+      "22nd Street",
+      "19:17"
+    ],
+    [
+      "San Francisco",
+      "19:24"
+    ]
+  ]
+}
