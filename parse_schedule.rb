@@ -3,8 +3,9 @@
 require 'rubygems'
 require 'nokogiri'
 require 'json'
+require 'open-uri'
 
-doc = Nokogiri::HTML(open('weekdaytimetable.html'))
+doc = Nokogiri::HTML(open('http://www.caltrain.com/schedules/weekdaytimetable.html'))
 
 # NORTHBOUND
 northbound = doc/'//table[@summary="Weekday Northbound service"]'
