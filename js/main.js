@@ -2,8 +2,21 @@ COLOR_LIMITED = "#F7E89D";
 COLOR_BULLET = "#F0B2A1";
 FAST_FORWARD_SPEED = 3000;
 nowOverride = undefined;
+schedule = undefined;
 nowOffset = 0;
 fastForward = false;
+
+function scheduleForToday(){
+  var today = new Date();
+  var day = today.getDay();
+  if(day == 0){
+    return "sunday";
+  }
+  if(day == 6){
+    return "saturday";
+  }
+  return "weekday";
+}
 
 $(function(){
   var current = new Date();;
@@ -34,14 +47,14 @@ $(function(){
   $("#fastforward").change(function(){
     fastForward = this.checked;
   });
-  /*
-  $('#system_map').click(function(evt){
-    topOffset = $(this).offset().top;
-    leftOffset = $(this).offset().left;
 
-    console.log("["+(evt.pageX-leftOffset)+", "+(evt.pageY-topOffset)+"],");
+  $("input[name=daytype]").click(function(){
+    $.getJSON($(this).val()+"_schedule.json", function(data){
+      schedule = data;
+    });
   });
-  */
+
+  $("input[value="+scheduleForToday()+"]").click();
 });
 
 function now(){
@@ -111,11 +124,15 @@ function interpolateTrainPosition(start, end){
   var segmentDuration = endTime-startTime;
   var segmentCompleted = now()-startTime;
 
+  try{
   var x = stations[start[0]][0];
   var y = stations[start[0]][1];
   
   var xdist = stations[end[0]][0]-x;
   var ydist = stations[end[0]][1]-y;
+} catch(e){
+  console.log(start[0]);
+}
 
   if(now() > endTime){
     position = 1;
@@ -137,6 +154,9 @@ function placeTrain(train){
 }
 
 function updateTrains(){
+  if(schedule === undefined){
+    return;
+  }
   $("#now").text(now().toString());
   $("#timeSlider").slider({value: now().getTime()});
   var map = document.getElementById('system_map').getContext('2d');
@@ -145,6 +165,10 @@ function updateTrains(){
   /* Determine the set of trains currently on the line */
   for(train in schedule){
     stops = schedule[train];
+    if(stops[0] === undefined){
+      console.log(train);
+      console.log(schedule);
+    }
     if(timepointToTime(stops[0][1]) < now() && timepointToTime(stops[stops.length-1][1]) > now()){
       /*console.log(train+" is active");*/
       activeTrains.push(train);
@@ -157,22 +181,16 @@ function updateTrains(){
   }
 }
 
-function doFastForward(){
+function refresh(){
   if(fastForward){
     nowOffset += FAST_FORWARD_SPEED;
-    updateTrains();
   }
+  updateTrains();
 }
 
-setInterval(doFastForward, 50);
+setInterval(refresh, 50);
 
 $.getJSON("stations.json", function(data){
   stations = data;
-});
-
-$.getJSON("trains.json", function(data){
-  schedule = data;
-  //updateTrains();
-  setInterval(updateTrains, 200);
 });
 
