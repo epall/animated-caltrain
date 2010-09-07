@@ -1,7 +1,9 @@
 COLOR_LIMITED = "#F7E89D";
 COLOR_BULLET = "#F0B2A1";
+FAST_FORWARD_SPEED = 3000;
 nowOverride = undefined;
 nowOffset = 0;
+fastForward = false;
 
 $(function(){
   var current = new Date();;
@@ -27,6 +29,10 @@ $(function(){
         nowOffset = ui.value-(new Date()).getTime();
       }
     }
+  });
+
+  $("#fastforward").change(function(){
+    fastForward = this.checked;
   });
   /*
   $('#system_map').click(function(evt){
@@ -149,6 +155,15 @@ function updateTrains(){
     drawTrain(coords[0], coords[1], activeTrains[idx]);
   }
 }
+
+function doFastForward(){
+  if(fastForward){
+    nowOffset += FAST_FORWARD_SPEED;
+    updateTrains();
+  }
+}
+
+setInterval(doFastForward, 50);
 
 $.getJSON("stations.json", function(data){
   stations = data;
