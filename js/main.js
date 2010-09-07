@@ -92,23 +92,33 @@ function drawTrain(x, y, num){
   if(num[0] == "2"){
     ctx.fillStyle = COLOR_LIMITED;
   }
-  ctx.fillRect(x-20, y-10, 40, 20);
   ctx.beginPath();
-  if(num % 2 == 1){
-    ctx.moveTo(x-20, y-9);
-    ctx.lineTo(x, y-15);
-    ctx.lineTo(x+20, y-9);
-  } else {
-    ctx.moveTo(x-20, y+9);
-    ctx.lineTo(x, y+15);
-    ctx.lineTo(x+20, y+9);
+  ctx.moveTo(x-20, y-10);
+  ctx.lineTo(x-20, y+10);
+  if(num % 2 == 0){
+    // southbound
+    ctx.lineTo(x, y+18);
   }
+  ctx.lineTo(x+20, y+10);
+  ctx.lineTo(x+20, y-10);
+  if(num % 2 == 1){
+    // northbound
+    ctx.lineTo(x, y-18);
+  }
+  ctx.lineTo(x-20, y-10);
   ctx.closePath();
   ctx.fill();
+  ctx.stroke();
 
   ctx.fillStyle = "black";
   ctx.font = "18px arial";
-  ctx.fillText(num, x-16, y+6);
+  if(num % 2 == 0){
+    // southbound
+    ctx.fillText(num, x-16, y+8);
+  } else {
+    // northbound
+    ctx.fillText(num, x-16, y+4);
+  }
 }
 
 function interpolateTrainPosition(start, end){
