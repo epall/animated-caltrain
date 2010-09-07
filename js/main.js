@@ -107,20 +107,21 @@ function interpolateTrainPosition(start, end){
   endTime.setHours(end[1].split(":")[0]);
   endTime.setMinutes(end[1].split(":")[1]);
   endTime.setSeconds(0);
+  endTime.setMinutes(endTime.getMinutes()-1);
   var segmentDuration = endTime-startTime;
   var segmentCompleted = now()-startTime;
 
-  try{
   var x = stations[start[0]][0];
   var y = stations[start[0]][1];
   
   var xdist = stations[end[0]][0]-x;
   var ydist = stations[end[0]][1]-y;
-} catch(e){
-  console.log(e);
-}
 
-  position = segmentCompleted/segmentDuration;
+  if(now() > endTime){
+    position = 1;
+  } else {
+    position = segmentCompleted/segmentDuration;
+  }
   return [x+(xdist*position), y+(ydist*position)];
 }
 
