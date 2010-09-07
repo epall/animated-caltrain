@@ -134,15 +134,11 @@ function interpolateTrainPosition(start, end){
   var segmentDuration = endTime-startTime;
   var segmentCompleted = now()-startTime;
 
-  try{
   var x = stations[start[0]][0];
   var y = stations[start[0]][1];
   
   var xdist = stations[end[0]][0]-x;
   var ydist = stations[end[0]][1]-y;
-} catch(e){
-  console.log(start[0]);
-}
 
   if(now() > endTime){
     position = 1;

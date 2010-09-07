@@ -17,7 +17,6 @@ def text_to_time(cell, train_number)
       time[0] += 12 if ["197", "198", "451", "454"].include?(train_number) && time[0] < 14
       time[0] += 12 if "454" == train_number && time[0] < 20
       txt = sprintf("%02d:%02d", *time)
-      p txt if train_number == "454"
     end
     return txt
 end
