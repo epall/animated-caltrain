@@ -165,12 +165,7 @@ function updateTrains(){
   /* Determine the set of trains currently on the line */
   for(train in schedule){
     stops = schedule[train];
-    if(stops[0] === undefined){
-      console.log(train);
-      console.log(schedule);
-    }
     if(timepointToTime(stops[0][1]) < now() && timepointToTime(stops[stops.length-1][1]) > now()){
-      /*console.log(train+" is active");*/
       activeTrains.push(train);
     }
   }
