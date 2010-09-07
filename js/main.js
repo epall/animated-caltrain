@@ -1,17 +1,48 @@
 COLOR_LIMITED = "#F7E89D";
 COLOR_BULLET = "#F0B2A1";
+nowOverride = undefined;
+nowOffset = 0;
 
 $(function(){
+  var current = new Date();;
+  var dayStart = new Date();
+  dayStart.setHours(0);
+  dayStart.setMinutes(0);
+  dayStart.setSeconds(0);
+  var dayEnd = new Date();
+  dayEnd.setHours(23);
+  dayEnd.setMinutes(59);
+  dayEnd.setSeconds(59);
+
+  $(".slider").slider({
+    min: dayStart.getTime(),
+    max: dayEnd.getTime(),
+    value: current.getTime(),
+    slide: function(event, ui){
+      nowOverride = ui.value;
+    },
+    change: function(event, ui){
+      if(event.originalEvent !== undefined){
+        nowOverride = undefined;
+        nowOffset = ui.value-(new Date()).getTime();
+      }
+    }
+  });
+  /*
   $('#system_map').click(function(evt){
     topOffset = $(this).offset().top;
     leftOffset = $(this).offset().left;
 
     console.log("["+(evt.pageX-leftOffset)+", "+(evt.pageY-topOffset)+"],");
   });
+  */
 });
 
 function now(){
-  var myDate = new Date();
+  if(nowOverride !== undefined){
+    return new Date(nowOverride);
+  }
+  var myDate = new Date((new Date()).getTime()+nowOffset);
   return myDate;
 }
 
@@ -31,6 +62,8 @@ img.onload = function(){
 img.src = "Caltrain+Zone+Map.jpg";
 
 function drawTrain(x, y, num){
+  x = Math.floor(x);
+  y = Math.floor(y);
   /*console.log("Drawing train at "+x+","+y);*/
   var ctx = document.getElementById('system_map').getContext('2d');
   ctx.fillStyle = "white";
@@ -97,6 +130,8 @@ function placeTrain(train){
 }
 
 function updateTrains(){
+  $("#now").text(now().toString());
+  $("#timeSlider").slider({value: now().getTime()});
   var map = document.getElementById('system_map').getContext('2d');
   map.drawImage(img, 0, 0, 600, 1600);
   var activeTrains = [];

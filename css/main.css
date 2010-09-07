@@ -1,0 +1,18 @@
+#container {
+  margin:auto;
+  text-align: center;
+}
+
+#controls form {
+  text-align: left;
+  width: 400px;
+  margin: auto;
+}
+
+.slider {
+  margin-top:5px;
+}
+
+#system_map {
+  margin-top: 1em;
+}
