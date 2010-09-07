@@ -2,8 +2,21 @@ COLOR_LIMITED = "#F7E89D";
 COLOR_BULLET = "#F0B2A1";
 FAST_FORWARD_SPEED = 3000;
 nowOverride = undefined;
+schedule = undefined;
 nowOffset = 0;
 fastForward = false;
+
+function scheduleForToday(){
+  var today = new Date();
+  var day = today.getDay();
+  if(day == 0){
+    return "sunday";
+  }
+  if(day == 6){
+    return "saturday";
+  }
+  return "weekday";
+}
 
 $(function(){
   var current = new Date();;
@@ -34,14 +47,14 @@ $(function(){
   $("#fastforward").change(function(){
     fastForward = this.checked;
   });
-  /*
-  $('#system_map').click(function(evt){
-    topOffset = $(this).offset().top;
-    leftOffset = $(this).offset().left;
 
-    console.log("["+(evt.pageX-leftOffset)+", "+(evt.pageY-topOffset)+"],");
+  $("input[name=daytype]").click(function(){
+    $.getJSON($(this).val()+"_schedule.json", function(data){
+      schedule = data;
+    });
   });
-  */
+
+  $("input[value="+scheduleForToday()+"]").click();
 });
 
 function now(){
@@ -79,23 +92,33 @@ function drawTrain(x, y, num){
   if(num[0] == "2"){
     ctx.fillStyle = COLOR_LIMITED;
   }
-  ctx.fillRect(x-20, y-10, 40, 20);
   ctx.beginPath();
-  if(num % 2 == 1){
-    ctx.moveTo(x-20, y-9);
-    ctx.lineTo(x, y-15);
-    ctx.lineTo(x+20, y-9);
-  } else {
-    ctx.moveTo(x-20, y+9);
-    ctx.lineTo(x, y+15);
-    ctx.lineTo(x+20, y+9);
+  ctx.moveTo(x-20, y-10);
+  ctx.lineTo(x-20, y+10);
+  if(num % 2 == 0){
+    // southbound
+    ctx.lineTo(x, y+18);
   }
+  ctx.lineTo(x+20, y+10);
+  ctx.lineTo(x+20, y-10);
+  if(num % 2 == 1){
+    // northbound
+    ctx.lineTo(x, y-18);
+  }
+  ctx.lineTo(x-20, y-10);
   ctx.closePath();
   ctx.fill();
+  ctx.stroke();
 
   ctx.fillStyle = "black";
   ctx.font = "18px arial";
-  ctx.fillText(num, x-16, y+6);
+  if(num % 2 == 0){
+    // southbound
+    ctx.fillText(num, x-16, y+8);
+  } else {
+    // northbound
+    ctx.fillText(num, x-16, y+4);
+  }
 }
 
 function interpolateTrainPosition(start, end){
@@ -107,6 +130,7 @@ function interpolateTrainPosition(start, end){
   endTime.setHours(end[1].split(":")[0]);
   endTime.setMinutes(end[1].split(":")[1]);
   endTime.setSeconds(0);
+  endTime.setMinutes(endTime.getMinutes()-1);
   var segmentDuration = endTime-startTime;
   var segmentCompleted = now()-startTime;
 
@@ -117,10 +141,14 @@ function interpolateTrainPosition(start, end){
   var xdist = stations[end[0]][0]-x;
   var ydist = stations[end[0]][1]-y;
 } catch(e){
-  console.log(e);
+  console.log(start[0]);
 }
 
-  position = segmentCompleted/segmentDuration;
+  if(now() > endTime){
+    position = 1;
+  } else {
+    position = segmentCompleted/segmentDuration;
+  }
   return [x+(xdist*position), y+(ydist*position)];
 }
 
@@ -136,6 +164,9 @@ function placeTrain(train){
 }
 
 function updateTrains(){
+  if(schedule === undefined){
+    return;
+  }
   $("#now").text(now().toString());
   $("#timeSlider").slider({value: now().getTime()});
   var map = document.getElementById('system_map').getContext('2d');
@@ -145,7 +176,6 @@ function updateTrains(){
   for(train in schedule){
     stops = schedule[train];
     if(timepointToTime(stops[0][1]) < now() && timepointToTime(stops[stops.length-1][1]) > now()){
-      /*console.log(train+" is active");*/
       activeTrains.push(train);
     }
   }
@@ -156,22 +186,16 @@ function updateTrains(){
   }
 }
 
-function doFastForward(){
+function refresh(){
   if(fastForward){
     nowOffset += FAST_FORWARD_SPEED;
-    updateTrains();
   }
+  updateTrains();
 }
 
-setInterval(doFastForward, 50);
+setInterval(refresh, 50);
 
 $.getJSON("stations.json", function(data){
   stations = data;
-});
-
-$.getJSON("trains.json", function(data){
-  schedule = data;
-  //updateTrains();
-  setInterval(updateTrains, 200);
 });
 
