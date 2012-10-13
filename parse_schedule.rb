@@ -57,7 +57,7 @@ stations = (southbound/"tbody/tr/th[2]/a").map(&:text).map{|t| t.gsub(/\302\240/
 
 3.upto(train_numbers.length+2) do |column|
   cell_index = column
-  cell_index += 1 if column >= 27
+  cell_index += 1 if column >= 26
   times = []
   train_number = train_numbers[column-3]
   cells = southbound/"tbody/tr/td[#{cell_index}]"
