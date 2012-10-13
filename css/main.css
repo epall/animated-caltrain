@@ -13,6 +13,9 @@
   margin-top:5px;
 }
 
-#system_map {
+#map {
+  margin: auto;
   margin-top: 1em;
+  width: 320px;
+  height: 1600px;
 }

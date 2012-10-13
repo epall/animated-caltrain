@@ -49,9 +49,7 @@ $(function(){
   });
 
   $("input[name=daytype]").click(function(){
-    $.getJSON($(this).val()+"_schedule.json", function(data){
-      schedule = data;
-    });
+    schedule = SCHEDULES[$(this).val()];
   });
 
   $("input[value="+scheduleForToday()+"]").click();
@@ -72,13 +70,6 @@ function timepointToTime(timepoint){
   time.setSeconds(0);
   return time;
 }
-
-var img = new Image();
-img.onload = function(){
-  var map = document.getElementById('system_map').getContext('2d');
-  map.drawImage(img, 0, 0, 600, 1600);
-};
-img.src = "Caltrain+Zone+Map.jpg";
 
 function drawTrain(x, y, num){
   x = Math.floor(x);
@@ -182,16 +173,67 @@ function updateTrains(){
   }
 }
 
-function refresh(){
-  if(fastForward){
-    nowOffset += FAST_FORWARD_SPEED;
-  }
-  updateTrains();
+function Train(schedule) {
+  this.schedule = schedule;
+
+  this.stack = map.set();
+
+  var background = map.rect(0, 0, 40, 50);
+  background.attr({
+    'stroke': 'black',
+    'fill': 'white'
+  });
+  this.stack.push(background);
 }
 
-setInterval(refresh, 50);
+Train.prototype.move = function(startStation, endStation) {
+}
+
+function drawMap(mileposts) {
+  map = Raphael($('#map').get(0));
+  var label = map.text(240, 10,"N");
+  label.attr('font-size', 14);
+  label.attr('font-weight', 'bold');
+  var north = map.path("M240 20L240 1580M241 20L230 30M239 20L250 30");
+  north.attr('stroke-width', 4);
+
+  label = map.text(290, 10, "S");
+  label.attr('font-size', 14);
+  label.attr('font-weight', 'bold');
+  var south = map.path("M240 20L240 1580M241 20L230 30M239 20L250 30");
+  south.attr('stroke-width', 4);
+  south.transform("t50,0s1,-1,240,800")
+
+  var topY = 40;
+  var bottomY = map.height-40;
+
+  var factor = (bottomY-topY)/(mileposts[mileposts.length-1][1]);
+
+  for(var i = 0; i < mileposts.length; i++) {
+    var name = mileposts[i][0];
+    var miles = mileposts[i][1];
+
+    var t = map.text(220, topY+miles*factor, name);
+    t.attr('font-size', 14);
+    t.attr('text-anchor', 'end');
+
+    var c = map.circle(240, topY+miles*factor, 6);
+    c.attr('fill', 'white');
+    c.attr('stroke', 'red');
+    c.attr('stroke-width', 2);
+
+    var c = map.circle(290, topY+miles*factor, 6);
+    c.attr('fill', 'white');
+    c.attr('stroke', 'red');
+    c.attr('stroke-width', 2);
+  }
+}
 
 $.getJSON("stations.json", function(data){
   stations = data;
 });
 
+$.getJSON("mileposts.json", function(data){
+  mileposts = data;
+  drawMap(mileposts);
+});

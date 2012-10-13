@@ -1,4 +1,4 @@
-[
+var mileposts = [
   ["San Francisco", 0.2],
   ["22nd Street", 1.9],
   ["Bayshore", 5.2],
