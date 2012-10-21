@@ -5,7 +5,7 @@
 
 #controls form {
   text-align: left;
-  width: 400px;
+  width: 310px;
   margin: auto;
 }
 
@@ -13,6 +13,9 @@
   margin-top:5px;
 }
 
-#system_map {
+#map {
+  margin: auto;
   margin-top: 1em;
+  width: 225px;
+  height: 1600px;
 }

@@ -1,4 +1,4 @@
-{
+var stations = {
   "Gilroy": [
     374,
     1497
