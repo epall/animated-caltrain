@@ -191,22 +191,35 @@ function createTrain(name) {
 function drawTrains(time) {
   var activeTrains = getActiveTrains(time);
 
-  /* FIXME: opportunity to re-use drawn trains */
-  for(var name in trainsOnMap) {
-    var el = trainsOnMap[name];
-    el.remove();
-  }
-
   for(var i = 0; i < activeTrains.length; i++) {
     var name = activeTrains[i][0];
     var stops = activeTrains[i][1];
 
-    var train = createTrain(name);
-    trainsOnMap[name] = train;
+    if(!trainsOnMap[name]) {
+      var train = createTrain(name);
+      trainsOnMap[name] = train;
+    } else {
+      var train = trainsOnMap[name];
+    }
 
     var x = isNorthboundTrain(name) ? 240 : 290;
     var y = trainPosition(time, stops)*verticalScale + 40;
     train.transform('t'+x+','+y);
+  }
+
+  /* FIXME: opportunity to re-use drawn trains */
+  for(var name in trainsOnMap) {
+    var keep = false;
+    for(var i = 0; i < activeTrains.length; i++) {
+      if(activeTrains[i][0] == name) {
+        keep = true;
+        break;
+      }
+    }
+    if(!keep) {
+      var el = trainsOnMap[name];
+      el.remove();
+    }
   }
 }
 
