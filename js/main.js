@@ -35,13 +35,7 @@ $(function(){
     max: dayEnd.getTime(),
     value: current.getTime(),
     slide: function(event, ui){
-      nowOverride = ui.value;
-    },
-    change: function(event, ui){
-      if(event.originalEvent !== undefined){
-        nowOverride = undefined;
-        nowOffset = ui.value-(new Date()).getTime();
-      }
+      window.virtualTime = ui.value;
     }
   });
 
@@ -56,6 +50,7 @@ $(function(){
   $("input[value="+scheduleForDay(new Date())+"]").click();
 
   drawMap(mileposts);
+  window.virtualTime = new Date().getTime();
   animate();
 });
 
@@ -64,17 +59,21 @@ var lastFrameTime = new Date();
 function animate() {
   requestAnimationFrame(animate);
   var delta = new Date() - lastFrameTime;
+  lastFrameTime = new Date();
   if(window.fastForward) {
     delta = delta * 30;
   }
-  var currentSliderValue = $('.slider').slider('value');
-  $('.slider').slider('value', currentSliderValue+delta);
-  lastFrameTime = new Date();
 
-  var now = new Date(currentSliderValue);
-  $('#now').text(now.toString());
-
+  window.virtualTime += delta;
+  var now = new Date(window.virtualTime);
   drawTrains(now);
+
+  var currentSliderValue = $('.slider').slider('value');
+  if(Math.abs(currentSliderValue-window.virtualTime) > 1000) {
+    $('#now').text(now.toString());
+    $('.slider').slider('value', window.virtualTime);
+  }
+
 }
 
 /* ************* Schedule querying ***************** */
@@ -203,11 +202,18 @@ function drawTrains(time) {
     }
 
     var x = isNorthboundTrain(name) ? 240 : 290;
-    var y = trainPosition(time, stops)*verticalScale + 40;
-    train.transform('t'+x+','+y);
+    var yPosition = trainPosition(time, stops);
+    yPosition = Math.round(yPosition*50) / 50;
+
+    var y = yPosition*verticalScale + 40;
+    var t = 't'+x+','+y;
+
+    if(train.yPosition != y) {
+      train.transform(t);
+      train.yPosition = y;
+    }
   }
 
-  /* FIXME: opportunity to re-use drawn trains */
   for(var name in trainsOnMap) {
     var keep = false;
     for(var i = 0; i < activeTrains.length; i++) {
@@ -219,6 +225,7 @@ function drawTrains(time) {
     if(!keep) {
       var el = trainsOnMap[name];
       el.remove();
+      delete trainsOnMap[name];
     }
   }
 }
