@@ -1086,7 +1086,7 @@ SCHEDULES['saturday'] = {
     ],
     [
       "San Mateo",
-      "06:14"
+      "18:14"
     ],
     [
       "Millbrae",
