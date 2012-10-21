@@ -1,4 +1,6 @@
-SCHEDULES = SCHEDULES || {};
+if(typeof(SCHEDULES) == 'undefined') {
+  SCHEDULES = {};
+}
 
 SCHEDULES['sunday'] = {
   "438": [

@@ -1,8 +1,8 @@
-var mileposts = [
+mileposts = [
   ["San Francisco", 0.2],
   ["22nd Street", 1.9],
   ["Bayshore", 5.2],
-  ["South San Francisco", 9.3],
+  ["So. San Francisco", 9.3],
   ["San Bruno", 11.6],
   ["Millbrae", 13.7],
   ["Broadway", 15.2],
