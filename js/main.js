@@ -2,10 +2,17 @@ COLOR_LIMITED = "#F7E89D";
 COLOR_BULLET = "#F0B2A1";
 FAST_FORWARD_SPEED = 3000;
 DWELL_TIME = 90; /* seconds */
-nowOverride = undefined;
 schedule = undefined;
-nowOffset = 0;
 fastForward = false;
+
+/* drawing positions */
+var NORTH_X_POSITION = 150;
+var SOUTH_X_POSITION = NORTH_X_POSITION+50;
+
+function zeroPadded(num) {
+  return ('0'+num).slice(-2);
+}
+  
 
 function scheduleForDay(today){
   var day = today.getDay();
@@ -70,7 +77,7 @@ function animate() {
 
   var currentSliderValue = $('.slider').slider('value');
   if(Math.abs(currentSliderValue-window.virtualTime) > 1000) {
-    $('#now').text(now.toString());
+    $('#now').text(now.getHours() + ":" + zeroPadded(now.getMinutes()) + ":" + zeroPadded(now.getSeconds()));
     $('.slider').slider('value', window.virtualTime);
   }
 
@@ -201,7 +208,7 @@ function drawTrains(time) {
       var train = trainsOnMap[name];
     }
 
-    var x = isNorthboundTrain(name) ? 240 : 290;
+    var x = isNorthboundTrain(name) ? NORTH_X_POSITION : SOUTH_X_POSITION;
     var yPosition = trainPosition(time, stops);
     yPosition = Math.round(yPosition*50) / 50;
 
@@ -233,18 +240,22 @@ function drawTrains(time) {
 /* ************* Background map drawing ************ */
 
 function drawMap(mileposts) {
-  var label = map.text(240, 10,"N");
-  label.attr('font-size', 14);
-  label.attr('font-weight', 'bold');
-  var north = map.path("M240 20L240 1580M241 20L230 30M239 20L250 30");
-  north.attr('stroke-width', 4);
+  var routePath = map.path("M0 0L0 1560M1 0L-10 10M-1 0L10 10");
+  routePath.attr('stroke-width', 4);
 
-  label = map.text(290, 10, "S");
+  var label = map.text(NORTH_X_POSITION, 10,"N");
   label.attr('font-size', 14);
   label.attr('font-weight', 'bold');
-  var south = map.path("M240 20L240 1580M241 20L230 30M239 20L250 30");
-  south.attr('stroke-width', 4);
-  south.transform("t50,0s1,-1,240,800")
+
+  var north = routePath.clone();
+  north.transform("t"+NORTH_X_POSITION+",20")
+
+  label = map.text(SOUTH_X_POSITION, 10, "S");
+  label.attr('font-size', 14);
+  label.attr('font-weight', 'bold');
+
+  var south = routePath.clone();
+  south.transform("s1,-1,0,800t"+SOUTH_X_POSITION+",20");
 
   var topY = 40;
   var bottomY = map.height-40;
@@ -255,18 +266,20 @@ function drawMap(mileposts) {
     var name = mileposts[i][0];
     var miles = mileposts[i][1];
 
-    var t = map.text(215, topY+miles*verticalScale, name);
+    var t = map.text(NORTH_X_POSITION-30, topY+miles*verticalScale, name);
     t.attr('font-size', 14);
     t.attr('text-anchor', 'end');
 
-    var c = map.circle(240, topY+miles*verticalScale, 6);
+    var c = map.circle(NORTH_X_POSITION, topY+miles*verticalScale, 6);
     c.attr('fill', 'white');
     c.attr('stroke', 'red');
     c.attr('stroke-width', 2);
 
-    var c = map.circle(290, topY+miles*verticalScale, 6);
+    var c = map.circle(SOUTH_X_POSITION, topY+miles*verticalScale, 6);
     c.attr('fill', 'white');
     c.attr('stroke', 'red');
     c.attr('stroke-width', 2);
   }
+  routePath.remove();
+
 }
