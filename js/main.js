@@ -37,13 +37,14 @@ $(function(){
   dayEnd.setMinutes(59);
   dayEnd.setSeconds(59);
 
-  $(".slider").slider({
-    min: dayStart.getTime(),
-    max: dayEnd.getTime(),
-    value: current.getTime(),
-    slide: function(event, ui){
-      window.virtualTime = ui.value;
-    }
+  var timeSlider = $('#timeSlider');
+  timeSlider.attr('min', dayStart.getTime());
+  timeSlider.attr('max', dayEnd.getTime());
+  timeSlider.attr('step', 1000*60); // 1-minute steps
+  timeSlider.get(0).value = current.getTime();
+
+  timeSlider.on('change', function() {
+    window.virtualTime = parseInt(this.value, 10);
   });
 
   $("#fastforward").change(function(){
@@ -75,12 +76,11 @@ function animate() {
   var now = new Date(window.virtualTime);
   drawTrains(now);
 
-  var currentSliderValue = $('.slider').slider('value');
-  if(Math.abs(currentSliderValue-window.virtualTime) > 1000) {
+  var slider = document.getElementById('timeSlider');
+  if(Math.abs(slider.value-window.virtualTime) > 1000) {
     $('#now').text(now.getHours() + ":" + zeroPadded(now.getMinutes()) + ":" + zeroPadded(now.getSeconds()));
-    $('.slider').slider('value', window.virtualTime);
+    slider.value = window.virtualTime;
   }
-
 }
 
 /* ************* Schedule querying ***************** */

@@ -5,8 +5,13 @@
 
 #controls form {
   text-align: left;
-  width: 310px;
+  width: 225px;
   margin: auto;
+}
+
+input[type=range] {
+  width: 220px;
+  margin-left: 2px;
 }
 
 .slider {
