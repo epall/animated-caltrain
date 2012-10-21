@@ -255,7 +255,7 @@ function drawMap(mileposts) {
     var name = mileposts[i][0];
     var miles = mileposts[i][1];
 
-    var t = map.text(220, topY+miles*verticalScale, name);
+    var t = map.text(215, topY+miles*verticalScale, name);
     t.attr('font-size', 14);
     t.attr('text-anchor', 'end');
 
