@@ -78,10 +78,6 @@ function animate() {
 }
 
 /* ************* Schedule querying ***************** */
-function isNorthboundTrain(name) {
-  return "13579".indexOf(name[2]) != -1;
-}
-
 function timepointToTime(timepoint){
   var time = new Date();
   time.setHours(timepoint.split(":")[0]);
@@ -160,11 +156,29 @@ function trainPosition(time, stops){
 
 var trainsOnMap = {};
 
+function isNorthboundTrain(name) {
+  return "13579".indexOf(name[2]) != -1;
+}
+
+function isBulletTrain(name) {
+  return name[0] == '3' || name[0] == '8';
+}
+function isLimitedTrain(name) {
+  return name[0] == '2';
+}
+
+
 function createTrain(name) {
   map.setStart();
 
   var background = map.rect(-20, -10, 40, 20, 5);
-  background.attr('fill', 'white');
+  if(isBulletTrain(name)) {
+    background.attr('fill', '#F0B2A1');
+  } else if(isLimitedTrain(name)) {
+    background.attr('fill', '#F7E89D');
+  } else {
+    background.attr('fill', 'white');
+  }
 
   var namePath = map.text(0, 0, name);
   namePath.attr('font-size', 12)
