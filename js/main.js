@@ -7,6 +7,17 @@ schedule = undefined;
 nowOffset = 0;
 fastForward = false;
 
+function scheduleForDay(today){
+  var day = today.getDay();
+  if(day == 0){
+    return "sunday";
+  }
+  if(day == 6){
+    return "saturday";
+  }
+  return "weekday";
+}
+
 $(function(){
   map = Raphael($('#map').get(0));
   var current = new Date();;
@@ -35,11 +46,11 @@ $(function(){
   });
 
   $("#fastforward").change(function(){
-    fastForward = this.checked;
+    window.fastForward = this.checked;
   });
 
   $("input[name=daytype]").click(function(){
-    schedule = SCHEDULES[$(this).val()];
+    window.schedule = SCHEDULES[$(this).val()];
   });
 
   $("input[value="+scheduleForDay(new Date())+"]").click();
@@ -48,25 +59,27 @@ $(function(){
   animate();
 });
 
+var lastFrameTime = new Date();
+
 function animate() {
   requestAnimationFrame(animate);
-  drawTrains(new Date());
+  var delta = new Date() - lastFrameTime;
+  if(window.fastForward) {
+    delta = delta * 30;
+  }
+  var currentSliderValue = $('.slider').slider('value');
+  $('.slider').slider('value', currentSliderValue+delta);
+  lastFrameTime = new Date();
+
+  var now = new Date(currentSliderValue);
+  $('#now').text(now.toString());
+
+  drawTrains(now);
 }
 
 /* ************* Schedule querying ***************** */
 function isNorthboundTrain(name) {
   return "13579".indexOf(name[2]) != -1;
-}
-
-function scheduleForDay(today){
-  var day = today.getDay();
-  if(day == 0){
-    return "sunday";
-  }
-  if(day == 6){
-    return "saturday";
-  }
-  return "weekday";
 }
 
 function timepointToTime(timepoint){
@@ -78,12 +91,10 @@ function timepointToTime(timepoint){
 }
 
 function getActiveTrains(time) {
-  var schedule = SCHEDULES[scheduleForDay(time)];
-
   var activeTrains = [];
 
-  for(var train in schedule){
-    var stops = schedule[train];
+  for(var train in window.schedule){
+    var stops = window.schedule[train];
     var journeyStart = timepointToTime(stops[0][1]);
     var journeyEnd = timepointToTime(stops[stops.length-1][1]);
     if(journeyStart < time && journeyEnd > time){
@@ -181,7 +192,6 @@ function drawTrains(time) {
 
     var x = isNorthboundTrain(name) ? 240 : 290;
     var y = trainPosition(time, stops)*verticalScale + 40;
-    console.log(name, x, y);
     train.transform('t'+x+','+y);
   }
 }
