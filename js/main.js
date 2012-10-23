@@ -1,16 +1,30 @@
 COLOR_LIMITED = "#F7E89D";
 COLOR_BULLET = "#F0B2A1";
 FAST_FORWARD_SPEED = 3000;
-DWELL_TIME = 90; /* seconds */
 schedule = undefined;
 fastForward = false;
 
 /* drawing positions */
-var NORTH_X_POSITION = 150;
-var SOUTH_X_POSITION = NORTH_X_POSITION+50;
+var SOUTH_X_POSITION = 150;
+var NORTH_X_POSITION = SOUTH_X_POSITION+50;
 
 function zeroPadded(num) {
   return ('0'+num).slice(-2);
+}
+
+function dwellTime(now) {
+  if(window.schedule == SCHEDULES.weekday) {
+    if(now.getHours() >= 7 && now.getHours() <= 9) {
+      return 70 * 1000; // morning rush hour
+    } else if(now.getHours() >= 17 && now.getHours() <= 19) {
+      return 70 * 1000; // evening rush hour
+    } else {
+      return 40 * 1000; // daytime
+    }
+  } else {
+    // weekend
+    return 30 * 1000;
+  }
 }
   
 
@@ -110,7 +124,7 @@ function getActiveTrains(time) {
 function trainPositionInterpolated(start, end, time){
   var startTime = timepointToTime(start[1]);
   var endTime = timepointToTime(end[1]);
-  endTime = new Date(endTime - DWELL_TIME*1000);
+  endTime = new Date(endTime - dwellTime(endTime));
 
   var segmentDuration = endTime-startTime;
   var segmentCompleted = time-startTime;
@@ -157,6 +171,19 @@ function trainPosition(time, stops){
   }
 }
 
+function nextStopPosition(time, stops) {
+  for(var idx = 0; idx < stops.length; idx++){
+    if(time < timepointToTime(stops[idx][1])){
+      for(var i = 0; i < mileposts.length; i++) {
+        if(mileposts[i][0] == stops[idx][0]) {
+          return mileposts[i][1];
+        }
+      }
+    }
+  }
+  return null;
+}
+
 
 /* ************* Train drawing ********************* */
 
@@ -175,6 +202,12 @@ function isLimitedTrain(name) {
 
 
 function createTrain(name) {
+  var pointerToNextStop = map.path("M0 0L10 10");
+  pointerToNextStop.attr({
+    'arrow-end': 'open',
+    'stroke-width': 1.5
+  });
+
   map.setStart();
 
   var background = map.rect(-20, -10, 40, 20, 5);
@@ -191,7 +224,23 @@ function createTrain(name) {
 
   var train = map.setFinish();
 
+  train.pointerToNextStop = pointerToNextStop;
+
   return train;
+}
+
+function placeTrain(train, x, y, nextX, nextY) {
+  var t = 't'+x+','+y;
+  train.transform(t);
+  train.yPosition = y;
+
+  var curveShift = (y > nextY) ? 20 : -20;
+
+  var controlX = x + curveShift;
+  var controlY = (y+nextY)/2;
+
+  train.pointerToNextStop.attr('path', Raphael.format("M{0},{1}Q{2},{3},{4},{5}", x, y, controlX, controlY, nextX, nextY));
+  train.toFront();
 }
 
 function drawTrains(time) {
@@ -213,11 +262,9 @@ function drawTrains(time) {
     yPosition = Math.round(yPosition*50) / 50;
 
     var y = yPosition*verticalScale + 40;
-    var t = 't'+x+','+y;
 
     if(train.yPosition != y) {
-      train.transform(t);
-      train.yPosition = y;
+      placeTrain(train, x, y, x, nextStopPosition(time, stops)*verticalScale+40);
     }
   }
 
@@ -266,7 +313,7 @@ function drawMap(mileposts) {
     var name = mileposts[i][0];
     var miles = mileposts[i][1];
 
-    var t = map.text(NORTH_X_POSITION-30, topY+miles*verticalScale, name);
+    var t = map.text(SOUTH_X_POSITION-30, topY+miles*verticalScale, name);
     t.attr('font-size', 14);
     t.attr('text-anchor', 'end');
 
