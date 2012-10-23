@@ -6,8 +6,8 @@ schedule = undefined;
 fastForward = false;
 
 /* drawing positions */
-var NORTH_X_POSITION = 150;
-var SOUTH_X_POSITION = NORTH_X_POSITION+50;
+var SOUTH_X_POSITION = 150;
+var NORTH_X_POSITION = SOUTH_X_POSITION+50;
 
 function zeroPadded(num) {
   return ('0'+num).slice(-2);
@@ -266,7 +266,7 @@ function drawMap(mileposts) {
     var name = mileposts[i][0];
     var miles = mileposts[i][1];
 
-    var t = map.text(NORTH_X_POSITION-30, topY+miles*verticalScale, name);
+    var t = map.text(SOUTH_X_POSITION-30, topY+miles*verticalScale, name);
     t.attr('font-size', 14);
     t.attr('text-anchor', 'end');
 
