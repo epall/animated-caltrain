@@ -171,6 +171,19 @@ function trainPosition(time, stops){
   }
 }
 
+function nextStopPosition(time, stops) {
+  for(var idx = 0; idx < stops.length; idx++){
+    if(time < timepointToTime(stops[idx][1])){
+      for(var i = 0; i < mileposts.length; i++) {
+        if(mileposts[i][0] == stops[idx][0]) {
+          return mileposts[i][1];
+        }
+      }
+    }
+  }
+  return null;
+}
+
 
 /* ************* Train drawing ********************* */
 
@@ -189,6 +202,12 @@ function isLimitedTrain(name) {
 
 
 function createTrain(name) {
+  var pointerToNextStop = map.path("M0 0L10 10");
+  pointerToNextStop.attr({
+    'arrow-end': 'open',
+    'stroke-width': 1.5
+  });
+
   map.setStart();
 
   var background = map.rect(-20, -10, 40, 20, 5);
@@ -205,7 +224,23 @@ function createTrain(name) {
 
   var train = map.setFinish();
 
+  train.pointerToNextStop = pointerToNextStop;
+
   return train;
+}
+
+function placeTrain(train, x, y, nextX, nextY) {
+  var t = 't'+x+','+y;
+  train.transform(t);
+  train.yPosition = y;
+
+  var curveShift = (y > nextY) ? 20 : -20;
+
+  var controlX = x + curveShift;
+  var controlY = (y+nextY)/2;
+
+  train.pointerToNextStop.attr('path', Raphael.format("M{0},{1}Q{2},{3},{4},{5}", x, y, controlX, controlY, nextX, nextY));
+  train.toFront();
 }
 
 function drawTrains(time) {
@@ -227,11 +262,9 @@ function drawTrains(time) {
     yPosition = Math.round(yPosition*50) / 50;
 
     var y = yPosition*verticalScale + 40;
-    var t = 't'+x+','+y;
 
     if(train.yPosition != y) {
-      train.transform(t);
-      train.yPosition = y;
+      placeTrain(train, x, y, x, nextStopPosition(time, stops)*verticalScale+40);
     }
   }
 
