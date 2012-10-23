@@ -1,7 +1,6 @@
 COLOR_LIMITED = "#F7E89D";
 COLOR_BULLET = "#F0B2A1";
 FAST_FORWARD_SPEED = 3000;
-DWELL_TIME = 90; /* seconds */
 schedule = undefined;
 fastForward = false;
 
@@ -11,6 +10,21 @@ var NORTH_X_POSITION = SOUTH_X_POSITION+50;
 
 function zeroPadded(num) {
   return ('0'+num).slice(-2);
+}
+
+function dwellTime(now) {
+  if(window.schedule == SCHEDULES.weekday) {
+    if(now.getHours() >= 7 && now.getHours() <= 9) {
+      return 70 * 1000; // morning rush hour
+    } else if(now.getHours() >= 17 && now.getHours() <= 19) {
+      return 70 * 1000; // evening rush hour
+    } else {
+      return 40 * 1000; // daytime
+    }
+  } else {
+    // weekend
+    return 30 * 1000;
+  }
 }
   
 
@@ -110,7 +124,7 @@ function getActiveTrains(time) {
 function trainPositionInterpolated(start, end, time){
   var startTime = timepointToTime(start[1]);
   var endTime = timepointToTime(end[1]);
-  endTime = new Date(endTime - DWELL_TIME*1000);
+  endTime = new Date(endTime - dwellTime(endTime));
 
   var segmentDuration = endTime-startTime;
   var segmentCompleted = time-startTime;
