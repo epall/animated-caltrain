@@ -279,6 +279,7 @@ function drawTrains(time) {
     if(!keep) {
       var el = trainsOnMap[name];
       el.remove();
+      el.pointerToNextStop.remove();
       delete trainsOnMap[name];
     }
   }
