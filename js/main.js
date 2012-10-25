@@ -71,7 +71,7 @@ $(function(){
 
   $("input[value="+scheduleForDay(new Date())+"]").click();
 
-  drawMap(mileposts);
+  drawMap(STATIONS);
   window.virtualTime = new Date().getTime();
   animate();
 });
@@ -136,17 +136,17 @@ function trainPositionInterpolated(start, end, time){
   }
 
   var startMilepost;
-  for(var i = 0; i < mileposts.length; i++) {
-    if(mileposts[i][0] == start[0]) {
-      startMilepost = mileposts[i][1];
+  for(var i = 0; i < STATIONS.length; i++) {
+    if(STATIONS[i].name == start[0]) {
+      startMilepost = STATIONS[i].milepost;
       break;
     }
   }
 
   var endMilepost;
-  for(var i = 0; i < mileposts.length; i++) {
-    if(mileposts[i][0] == end[0]) {
-      endMilepost = mileposts[i][1];
+  for(var i = 0; i < STATIONS.length; i++) {
+    if(STATIONS[i].name == end[0]) {
+      endMilepost = STATIONS[i].milepost;
       break;
     }
   }
@@ -174,9 +174,9 @@ function trainPosition(time, stops){
 function nextStopPosition(time, stops) {
   for(var idx = 0; idx < stops.length; idx++){
     if(time < timepointToTime(stops[idx][1])){
-      for(var i = 0; i < mileposts.length; i++) {
-        if(mileposts[i][0] == stops[idx][0]) {
-          return mileposts[i][1];
+      for(var i = 0; i < STATIONS.length; i++) {
+        if(STATIONS[i].name == stops[idx][0]) {
+          return STATIONS[i].milepost;
         }
       }
     }
@@ -287,7 +287,7 @@ function drawTrains(time) {
 
 /* ************* Background map drawing ************ */
 
-function drawMap(mileposts) {
+function drawMap(stations) {
   var routePath = map.path("M0 0L0 1560M1 0L-10 10M-1 0L10 10");
   routePath.attr('stroke-width', 4);
 
@@ -308,11 +308,11 @@ function drawMap(mileposts) {
   var topY = 40;
   var bottomY = map.height-40;
 
-  window.verticalScale = (bottomY-topY)/(mileposts[mileposts.length-1][1]);
+  window.verticalScale = (bottomY-topY)/(stations[stations.length-1].milepost);
 
-  for(var i = 0; i < mileposts.length; i++) {
-    var name = mileposts[i][0];
-    var miles = mileposts[i][1];
+  for(var i = 0; i < stations.length; i++) {
+    var name = stations[i].name;
+    var miles = stations[i].milepost;
 
     var t = map.text(SOUTH_X_POSITION-30, topY+miles*verticalScale, name);
     t.attr('font-size', 14);
