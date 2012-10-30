@@ -1,3 +1,5 @@
+/* vim:set shiftwidth=2: */ 
+
 COLOR_LIMITED = "#F7E89D";
 COLOR_BULLET = "#F0B2A1";
 FAST_FORWARD_SPEED = 3000;
@@ -71,7 +73,17 @@ $(function(){
 
   $("input[value="+scheduleForDay(new Date())+"]").click();
 
-  drawMap(mileposts);
+  $('#locate').click(function(e) {
+    e.preventDefault();
+    if(navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(geo) {
+        var milepost = latlngToMilepost(geo.coords.latitude, geo.coords.longitude);
+        updateMyLocationOnMap(milepost);
+      });
+    }
+  });
+
+  drawMap(STATIONS);
   window.virtualTime = new Date().getTime();
   animate();
 });
@@ -95,6 +107,46 @@ function animate() {
     $('#now').text(now.getHours() + ":" + zeroPadded(now.getMinutes()) + ":" + zeroPadded(now.getSeconds()));
     slider.value = window.virtualTime;
   }
+}
+
+/* ************* Geometry utilities **************** */
+function sqr(x) { return x * x }
+function dist2(v, w) { return sqr(v.x - w.x) + sqr(v.y - w.y) }
+
+function distToSegmentSquared(p, v, w) {
+  var l2 = dist2(v, w);
+  if (l2 == 0) return dist2(p, v);
+  var t = ((p.x - v.x) * (w.x - v.x) + (p.y - v.y) * (w.y - v.y)) / l2;
+  if (t < 0) return dist2(p, v);
+  if (t > 1) return dist2(p, w);
+  return dist2(p, { x: v.x + t * (w.x - v.x),
+                    y: v.y + t * (w.y - v.y) });
+}
+function distToSegment(p, v, w) { return Math.sqrt(distToSegmentSquared(p, v, w)); }
+
+/* ************* GPS<->Milepost translation ******** */
+function latlngToMilepost(latitude, longitude) {
+  var bestSegment;
+  var bestSegmentDistance = 1000.0;
+  var p = {x: latitude, y: longitude};
+
+  for(var i = 0; i < STATIONS.length-1; i++) {
+    var v = {x: STATIONS[i].latitude, y: STATIONS[i].longitude, milepost: STATIONS[i].milepost};
+    var w = {x: STATIONS[i+1].latitude, y: STATIONS[i+1].longitude, milepost: STATIONS[i+1].milepost};
+
+    var distance = distToSegment(p, v, w);
+    if(distance < bestSegmentDistance) {
+      bestSegmentDistance = distance;
+      bestSegment = [v, w];
+    }
+  }
+
+  var firstHalf = Math.sqrt(dist2(p, bestSegment[0]));
+  var secondHalf = Math.sqrt(dist2(p, bestSegment[1]));
+
+  var milepostDelta = bestSegment[1].milepost - bestSegment[0].milepost;
+
+  return bestSegment[0].milepost + (firstHalf/(secondHalf+firstHalf))*milepostDelta;
 }
 
 /* ************* Schedule querying ***************** */
@@ -136,17 +188,17 @@ function trainPositionInterpolated(start, end, time){
   }
 
   var startMilepost;
-  for(var i = 0; i < mileposts.length; i++) {
-    if(mileposts[i][0] == start[0]) {
-      startMilepost = mileposts[i][1];
+  for(var i = 0; i < STATIONS.length; i++) {
+    if(STATIONS[i].name == start[0]) {
+      startMilepost = STATIONS[i].milepost;
       break;
     }
   }
 
   var endMilepost;
-  for(var i = 0; i < mileposts.length; i++) {
-    if(mileposts[i][0] == end[0]) {
-      endMilepost = mileposts[i][1];
+  for(var i = 0; i < STATIONS.length; i++) {
+    if(STATIONS[i].name == end[0]) {
+      endMilepost = STATIONS[i].milepost;
       break;
     }
   }
@@ -174,9 +226,9 @@ function trainPosition(time, stops){
 function nextStopPosition(time, stops) {
   for(var idx = 0; idx < stops.length; idx++){
     if(time < timepointToTime(stops[idx][1])){
-      for(var i = 0; i < mileposts.length; i++) {
-        if(mileposts[i][0] == stops[idx][0]) {
-          return mileposts[i][1];
+      for(var i = 0; i < STATIONS.length; i++) {
+        if(STATIONS[i].name == stops[idx][0]) {
+          return STATIONS[i].milepost;
         }
       }
     }
@@ -184,6 +236,32 @@ function nextStopPosition(time, stops) {
   return null;
 }
 
+/* ************* My Location drawing *************** */
+
+var myLocationMarker;
+
+function updateMyLocationOnMap(milepost) {
+  if(!myLocationMarker) {
+    map.setStart();
+
+    var outerCircle = map.circle(0, 0, 8, 8);
+    outerCircle.attr('fill', 'white');
+    outerCircle.attr('stroke', 'green');
+    outerCircle.attr('stroke-width', 3);
+
+    var innerDot = map.circle(0, 0, 3, 3);
+    innerDot.attr('fill', 'green');
+    innerDot.attr('stroke', 'clear');
+
+
+    myLocationMarker = map.setFinish();
+  }
+
+  var x = (SOUTH_X_POSITION+NORTH_X_POSITION)/2;
+  var y = milepost*verticalScale+40;
+
+  myLocationMarker.transform('t'+x+','+y);
+}
 
 /* ************* Train drawing ********************* */
 
@@ -287,7 +365,7 @@ function drawTrains(time) {
 
 /* ************* Background map drawing ************ */
 
-function drawMap(mileposts) {
+function drawMap(stations) {
   var routePath = map.path("M0 0L0 1560M1 0L-10 10M-1 0L10 10");
   routePath.attr('stroke-width', 4);
 
@@ -308,11 +386,11 @@ function drawMap(mileposts) {
   var topY = 40;
   var bottomY = map.height-40;
 
-  window.verticalScale = (bottomY-topY)/(mileposts[mileposts.length-1][1]);
+  window.verticalScale = (bottomY-topY)/(stations[stations.length-1].milepost);
 
-  for(var i = 0; i < mileposts.length; i++) {
-    var name = mileposts[i][0];
-    var miles = mileposts[i][1];
+  for(var i = 0; i < stations.length; i++) {
+    var name = stations[i].name;
+    var miles = stations[i].milepost;
 
     var t = map.text(SOUTH_X_POSITION-30, topY+miles*verticalScale, name);
     t.attr('font-size', 14);
@@ -329,5 +407,4 @@ function drawMap(mileposts) {
     c.attr('stroke-width', 2);
   }
   routePath.remove();
-
 }
